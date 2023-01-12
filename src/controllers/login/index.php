@@ -7,9 +7,6 @@ if (userAlreadyLoggedIn()) {
     exit();
 }
 
-echo "test";
-exit;
-
 require(__DIR__ . "/../../../templates/login/login.php");
 
 function userAlreadyLoggedIn() {
