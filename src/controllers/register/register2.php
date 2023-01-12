@@ -1,7 +1,6 @@
 <?php 
-session_start();
 
-require(__DIR__ . "../../../template/register2.php");
+require(__DIR__ . "/../../../templates/register2.php");
 
 if (isset($_POST['BoutonValidation'])) {
 

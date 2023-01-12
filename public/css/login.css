@@ -1,0 +1,45 @@
+.form-ctn {
+    
+    display: flex;
+    flex-grow: 1;
+}
+
+form label {
+    font-family: 'Comfortaa';
+    font-weight: 500;
+    font-size: 1.125em;
+    display: block;
+    margin: 1.5em 0;
+    font-weight: 500;
+}
+
+form label input {
+    display: block;
+    background: none;
+    box-shadow: none;
+    border: 1px solid black;
+    border-radius: 0.75em;
+    padding: 1em;
+    width: 21em;
+    margin-top: 0.75em;
+    font-size: 0.9em;
+    font-family: 'Comfortaa';
+    font-weight: 300;
+    max-width: calc(100% - 2em);
+}
+
+.register-link {
+    display: block;
+    text-decoration: none;
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: 1em;
+    font-family: 'Inter';
+    width: fit-content;
+    margin-left: auto;
+    color: #0d6dcd;
+}
+.register-link:hover {
+    color: #D749EE;
+    transition: 0.5s;
+}
