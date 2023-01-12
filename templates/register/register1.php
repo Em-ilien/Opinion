@@ -20,7 +20,7 @@
   <header class="header">
     <h1 class="titre">Opinion<span class="dot">.</span></h1>
   </header>
-  <form method="get" action=".?page=register/register2" class="corps">
+<form action="src/controllers/register/register2.php" method="post" class="corps">
     <h2 class="sous-titre">Données personnelles</h2>
 
     <p class="text-info1">
@@ -46,6 +46,10 @@
     <form>
 
 
+    <input type="submit" class="bouton-validation" value="Accepter">
+</form>
+  
+  
 
 </body>
 
