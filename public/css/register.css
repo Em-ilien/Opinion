@@ -1,0 +1,62 @@
+*{
+margin: 0;
+padding: 0;
+}
+.Titre{
+    color: white;
+    font-family:'Coolvetica';
+}
+.Sous-titre{
+    color: #6B625A;
+    margin-bottom: 2em;
+}
+.textInfo1{
+    color: #6B625A;
+}
+.textInfo2{
+    color: #A9927D;
+}
+.header{
+    height: 100px;
+    background-color: #393232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corps{
+    margin-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+    font-family: 'Inter';
+
+}
+.input{
+    height: 65px;
+    width: 340px;
+    border-radius:10px;
+    border-color: black;
+    border: solid;
+    border-width: 1px;
+    background-color: #E9E3DE;
+    margin-bottom: 2em;
+
+
+}
+.BoutonValidation{
+    margin-top: 2em;
+    border-radius: 50px;
+    height: 65px;
+    width: 300px;
+    border: none;
+    background: linear-gradient(to right,#3772FF, #7449EE);    
+    font-family: 'comfortaa';
+    color: White;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body{
+    background-color: #E9E3DE;
+
+}

@@ -19,10 +19,10 @@ if (pageParameterContainsLogin($page)) {
 
 session_start();
 
-if (!userIsConnected()) {
-    header("Location: ?page=login");
-    exit();
-}
+// if (!userIsConnected()) {
+//     header("Location: ?page=login");
+//     exit();
+// }
 
 tryRequire(__DIR__ . "/src/controllers/" . $page . ".php");
 
