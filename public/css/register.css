@@ -10,6 +10,10 @@ padding: 0;
     color: #6B625A;
     margin-bottom: 2em;
 }
+.Sous-titre2{
+    color: #6B625A;
+    margin-bottom: 20px;
+}
 .textInfo1{
     color: #6B625A;
 }
@@ -17,14 +21,14 @@ padding: 0;
     color: #A9927D;
 }
 .header{
-    height: 100px;
+    height: 13vh;
     background-color: #393232;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .corps{
-    margin-top: 80px;
+    margin-top: 75px;
     margin-left: 300px;
     margin-right: 300px;
     margin-bottom: 100px;
@@ -40,6 +44,7 @@ padding: 0;
     border-width: 1px;
     background-color: #E9E3DE;
     margin-bottom: 2em;
+    font-size: 18px;
 
 
 }

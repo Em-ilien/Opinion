@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <title>Opinion - Inscription</title>
-  <link rel="stylesheet" href="../public/css/register.css">
+  <link rel="stylesheet" href="public/css/register.css">
   <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/comfortaa" rel="stylesheet">
@@ -18,7 +18,7 @@
   <header class="header">
     <h1 Class="Titre">Opinion.</h1>
   </header>
-  <form action="../src/controllers/register/register1.php" Class="corps">
+  <form action="src/controllers/register/register2.php" method="post" Class="corps">
   <h2 class="Sous-titre">Données personnelles</h2>
 
   <text class="textInfo1">
@@ -39,8 +39,8 @@
     ou à vos publications (posts, avis...).
   </text>
 
-  <input type="button" class="BoutonValidation"  value="Accepter">
-  <form>
+  <input type="submit" class="BoutonValidation" name="BoutonSuite"  value="Accepter">
+</form>
   
   
 
