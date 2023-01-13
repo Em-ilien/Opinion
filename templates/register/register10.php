@@ -16,7 +16,7 @@
     <h1 Class="titre">Opinion.</h1>
   </header>
   <form action="../../../?page=user" method="post" Class="corps">
-    <h1 class="sous-titre">Inscription réussie </h1>
+    <h1 class="sous-titre">Bienvenue sur Opinion </h1>
 
     <p class="text-info3">
     Vous pouvez dès à présent publier un post !
