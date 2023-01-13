@@ -5,7 +5,7 @@ padding: 0;
 
 form .background-title {
     position: relative;
-    bottom: 0.6em;
+    bottom: 0.45em;
     left: -2em;
     font-family: 'Coolvetica';
     font-style: normal;
@@ -91,7 +91,7 @@ form .background-title {
     margin-bottom: 2em;
     font-size: 18px;
 
-
+    */
 }
 .bouton-validation{
     border-radius: 50px;
@@ -112,6 +112,12 @@ form .background-title {
 }
 .bouton-validation:hover {
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.25);    
+}
+
+form label input[type='checkbox'] {
+    width: initial;
+    height: initial;
+    display: initial;
 }
 
 .checkbox-condition:checked {
