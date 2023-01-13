@@ -80,8 +80,8 @@ form .background-title {
 .corps p {
     max-width: 50em;
 }
-/*! .input{
-    height: 65px; 
+.input{
+    /*! height: 65px; 
     width: 340px;
     border-radius:10px;
     border-color: black;
@@ -91,7 +91,7 @@ form .background-title {
     margin-bottom: 2em;
     font-size: 18px;
 
-
+*/
 }
 .bouton-validation{
     border-radius: 50px;
@@ -103,15 +103,6 @@ form .background-title {
     color: White;
     font-weight: bold;
     font-size: 20px;
-    font-family: 'Comfortaa';
-    font-weight: 600;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-    margin: 3em auto 1.5em;
-    display: block;
-    cursor: pointer;
-}
-.bouton-validation:hover {
-    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.25);    
 }
 
 .checkbox-condition:checked {
