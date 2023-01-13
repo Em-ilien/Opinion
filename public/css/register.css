@@ -80,8 +80,8 @@ form .background-title {
 .corps p {
     max-width: 50em;
 }
-.input{
-    /*! height: 65px; 
+/*! .input{
+    height: 65px; 
     width: 340px;
     border-radius:10px;
     border-color: black;
