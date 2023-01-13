@@ -38,6 +38,7 @@ input[type=text]{
     color : #393232;
     font-weight: 500;
     font-family: "Inter", "Coolvetica", "Comfortaa", "Roboto";
+    margin-right: 1rem;
 }
 
 input[type=text]::placeholder{
