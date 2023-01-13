@@ -43,3 +43,13 @@ form label input {
     color: #D749EE;
     transition: 0.5s;
 }
+
+.login-error {
+  color: #D92452;
+  font-weight: 700;
+  font-family: 'Inter';
+  position: relative;
+  bottom: -2.75em;
+  margin: auto;
+  width: fit-content;
+}

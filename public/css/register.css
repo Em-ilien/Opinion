@@ -5,7 +5,7 @@ padding: 0;
 
 form .background-title {
     position: relative;
-    bottom: 0.45em;
+    bottom: 0.6em;
     left: -2em;
     font-family: 'Coolvetica';
     font-style: normal;
@@ -47,11 +47,15 @@ form .background-title {
     color: #6B625A;
     margin-bottom: 20px;
 }
-.textInfo1{
+.text-info1{
     color: #6B625A;
 }
 .text-info2{
     color: #A9927D;
+}
+.text-info3{
+    color: #6B625A;
+    font-size: 15px;
 }
 .header{
     height: fit-content;
@@ -77,7 +81,7 @@ form .background-title {
     max-width: 50em;
 }
 .input{
-    height: 65px;
+    /*! height: 65px; 
     width: 340px;
     border-radius:10px;
     border-color: black;
@@ -85,6 +89,9 @@ form .background-title {
     border-width: 1px;
     background-color: #E9E3DE;
     margin-bottom: 2em;
+    font-size: 18px;
+
+
 }
 .bouton-validation{
     border-radius: 50px;
@@ -107,6 +114,9 @@ form .background-title {
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.25);    
 }
 
+.checkbox-condition:checked {
+    background-color: #3772FF;
+}
 body{
     background-color: #E9E3DE;
 

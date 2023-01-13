@@ -1,0 +1,11 @@
+RewriteEngine On
+
+DirectoryIndex index.html index.php
+
+RewriteRule ^(src/ajax/.*)$ $1 [L]
+RewriteRule ^src/?.*$ - [F,L]
+RewriteRule ^templates/?.*$ - [F,L]
+
+# RewriteRule ^([A-Za-z\-_\/]*)$ index.php?page=$1 [L]
+
+RewriteRule ^([A-Za-z0-9\/]*)$ index.php
