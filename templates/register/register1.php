@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +9,13 @@
   <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/comfortaa" rel="stylesheet">
-
-
-
 </head>
 
 <body>
-
   <header class="header">
     <h1 class="titre">Opinion<span class="dot">.</span></h1>
   </header>
-<form action="src/controllers/register/register2.php" method="post" class="corps">
+  <form action="?page=register/2" method="post" class="corps">
     <h2 class="sous-titre">Données personnelles</h2>
 
     <p class="text-info1">
@@ -32,7 +27,7 @@
       - l'adresse email afin d'assurer votre authentification et de pouvoir vous envoyer des informations.<br>
       - le pseudonyme et le nom d'utilisateur, affichés publiquement sur votre profil utilisateur et attachés à vos
       publications.<br>
-      - votre date de naissance pour nous assurer du respect à nos conditions d’utilisation.<br>
+      - votre date de naissance pour nous assurer du respect à nos conditions d'utilisation.<br>
     </p>
     <br>
     <p class="text-info1">
@@ -44,12 +39,9 @@
 
     <input type="submit" class="bouton-validation" value="Accepter">
     <form>
+    </form>
 
 
-    <input type="submit" class="bouton-validation" value="Accepter">
-</form>
-  
-  
 
 </body>
 

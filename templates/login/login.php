@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+                <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opinion - Connexion</title>
     <link rel="stylesheet" href="public/css/style.css">
@@ -31,7 +31,7 @@
                     <input type="password" name="password">
                 </label>
 
-                <a class="register-link" href="?page=register">Pas de compte ? Inscrivez-vous.</a>
+                <a class="register-link" href="?page=register/1">Pas de compte ? Inscrivez-vous.</a>
 
                 <input type="submit" class="bouton-validation" value="Se connecter">
             </div>

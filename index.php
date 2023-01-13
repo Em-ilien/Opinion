@@ -3,19 +3,19 @@
 if (pageParamaterIsSet()) {
     $page = $_GET["page"];
 } else {
-    $page = "menu";
+    $page = "fil_principal";
 }
 
-if (pageParameterContainsLogin($page)) {
-    switch ($page) {
-        case "login":
-            tryRequire(__DIR__ . "/src/controllers/" . $page . "/index.php");
-            exit();
-        default:
-            tryRequire(__DIR__ . "/src/controllers/" . $page . ".php");
-            exit();
-    }
-}
+// if (pageParameterContainsLogin($page)) {
+//     switch ($page) {
+//         case "login":
+//             tryRequire(__DIR__ . "/src/controllers/" . $page . "/index.php");
+//             exit();
+//         default:
+//             tryRequire(__DIR__ . "/src/controllers/" . $page . ".php");
+//             exit();
+//     }
+// }
 
 session_start();
 
@@ -23,6 +23,7 @@ session_start();
 //     header("Location: ?page=login");
 //     exit();
 // }
+
 
 tryRequire(__DIR__ . "/src/controllers/" . $page . ".php");
 
