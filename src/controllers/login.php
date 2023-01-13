@@ -1,9 +1,9 @@
 <?php
 
-// if (userAlreadyLoggedIn()) {
-//     header("Location: .");
-//     exit();
-// }
+if (userAlreadyLoggedIn()) {
+    header("Location: .");
+    exit();
+}
 
 require(__DIR__ . "/../../templates/login/login.php");
 

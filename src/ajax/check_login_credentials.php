@@ -28,13 +28,13 @@ if (filter_var($_POST['identifier'], FILTER_VALIDATE_EMAIL)) {
 }
 
 if (!$user) {
-    die(json_encode(['status' => 'error', 'error' => 'Invalid identifier or password']));
+    die(json_encode(['status' => 'error', 'error' => 'Identifiant ou mot de passe invalide']));
 }
 
 $dbPassword = $userDAO->getPassword($user);
 
 if (!password_verify($password, $dbPassword)) {
-    die(json_encode(['status' => 'error', 'error' => 'Invalid identifier or password']));
+    die(json_encode(['status' => 'error', 'error' => 'Identifiant ou mot de passe invalide']));
 }
 
 $_SESSION['user'] = $user;

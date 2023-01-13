@@ -3,6 +3,9 @@ let loginForm = document.querySelector(".login-form");
 loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    if (document.querySelector(".login-error"))
+        document.querySelector(".login-error").remove();
+
     let email = loginForm.querySelector("input[name='email']").value;
     let password = loginForm.querySelector("input[name='password']").value;
 
@@ -17,7 +20,13 @@ loginForm.addEventListener("submit", (e) => {
         if (xhr.response.status == "success") {
             window.location.href = ".";
         } else {
-            document.querySelector(".error-message").innerHTML = xhr.response.message;
+            let error = document.createElement("p");
+            error.classList.add("login-error");
+            error.innerHTML = xhr.response.error;
+
+            setTimeout(() => {
+                loginForm.querySelector("div").insertBefore(error, document.querySelector(".bouton-validation"));
+            }, 100);
         }
     };
     xhr.send(data);
