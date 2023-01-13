@@ -57,8 +57,12 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-right: 1.5rem;
+}
+
+ul li{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 ul li a{
@@ -80,7 +84,6 @@ ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40vw;
 }
 
 .user-menu{
