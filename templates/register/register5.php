@@ -3,13 +3,15 @@ session_start();
 
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Opinion - Inscription</title>
-  <link rel="stylesheet" href="../public/css/register.css">
-  <link rel="stylesheet" href="../src/controllers/register10.php">
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="public/css/register.css">
+  <link rel="stylesheet" href="../src/controllers/register5.php">
   <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/comfortaa" rel="stylesheet">
@@ -19,7 +21,7 @@ session_start();
 </head>
 <body>
   <header class="header">
-    <h1 Class="Titre">Opinion.</h1>
+    <h1 class="titre">Opinion<span class="dot">.</span></h1>
   </header>
   
 </body>
