@@ -1,16 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Opinion - Inscription</title>
-  <link rel="stylesheet" href="../../../public/css/register.css">
-  <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/comfortaa" rel="stylesheet">
-
-                
-                
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="public/css/register.css">
 </head>
+
 <body>
   <header class="header">
     <h1 Class="titre">Opinion.</h1>
@@ -26,4 +23,5 @@
     <input type="submit" class="bouton-validation" name="button-next"  value="Découvrir Opinion">
   </form>
 </body>
+
 </html>
