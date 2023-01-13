@@ -6,17 +6,6 @@ if (pageParamaterIsSet()) {
     $page = "fil_principal";
 }
 
-// if (pageParameterContainsLogin($page)) {
-//     switch ($page) {
-//         case "login":
-//             tryRequire(__DIR__ . "/src/controllers/" . $page . "/index.php");
-//             exit();
-//         default:
-//             tryRequire(__DIR__ . "/src/controllers/" . $page . ".php");
-//             exit();
-//     }
-// }
-
 session_start();
 
 // if (!userIsConnected()) {
