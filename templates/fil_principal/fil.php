@@ -6,9 +6,6 @@
     <title>Opinion</title>
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/fil.css">
-  <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/comfortaa" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -18,7 +15,7 @@
         <ul>
             <li><a href=".">Accueil</a></li>
             <li><a href=".">Fil d'actualité</a></li>
-            <li><a href="?page=user&user=<?= $_SESSION["id"] ?>">Profil</a></li>
+            <li><a href="?page=user&user=<?= $userId ?>">Profil</a></li>
             <li><a href="#">Déconnexion</a></li> <!-- TODO: supprimer le lien et ouvrir une popup avec du JS -->
         </ul>
         <div class="search-bar-header">

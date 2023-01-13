@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/register.css">
     <link rel="stylesheet" href="public/css/login.css">
-    <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/comfortaa" rel="stylesheet">
 </head>
 
 <body>
@@ -18,7 +15,7 @@
         <h1 class="titre">Opinion<span class="dot">.</span></h1>
     </header>
     <div class="form-ctn">
-        <form method="post" action="." class="corps">
+        <form method="post" action="." class="corps login-form">
             <h1 class="background-title">Connexion</h1>
             <div>
                 <label>
@@ -36,6 +33,7 @@
             </div>
         </form>
     </div>
-</body>
 
+    <script src="public/js/login.js"></script>
+</body>
 </html>

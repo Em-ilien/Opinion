@@ -26,7 +26,7 @@ function pageParameterContainsLogin($page)
 }
 function userIsConnected()
 {
-    return isset($_SESSION["id"]);
+    return isset($_SESSION["user"]);
 }
 function tryRequire($path)
 {

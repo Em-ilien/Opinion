@@ -8,5 +8,5 @@
 require(__DIR__ . "/../../templates/login/login.php");
 
 function userAlreadyLoggedIn() {
-    return isset($_SESSION["id"]);
+    return isset($_SESSION["user"]);
 }
