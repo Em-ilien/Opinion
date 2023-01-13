@@ -14,21 +14,21 @@
 </head>
 <body>
   <header class="header">
-    <h1 Class="Titre">Opinion.</h1>
+    <h1 Class="titre">Opinion.</h1>
   </header>
 
   
     <form action="../register/register2.php" method="post" class="corps">
-    <h2 class="Sous-titre">Comment vous appelez-vous ?</h2>
+    <h2 class="sous-titre">Comment vous appelez-vous ?</h2>
 
-    <input type="text" name="EntreeNom" class="input" placeholder=" Prénom ou Pseudonyme"><br> 
+    <input type="text" name="entree-nom" class="input" placeholder=" Prénom ou Pseudonyme"><br> 
 
-    <text class="textInfo1">
+    <p class="text-info1">
     Vous êtes libre de choisir ou non un pseudonyme.
     Il sera affiché publiquement sur votre profil et sera attaché au contenu que vous publierez.<br>
-    </text> 
+    </p> 
  
-    <input type="submit" name="BoutonValidation" class="BoutonValidation"  value="Continuer">
+    <input type="submit" name="bouton-validation" class="bouton-validation"  value="Continuer">
 
     </form>
   

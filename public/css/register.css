@@ -2,23 +2,27 @@
 margin: 0;
 padding: 0;
 }
-.Titre{
+.titre{
     color: white;
     font-family:'Coolvetica';
 }
-.Sous-titre{
+.sous-titre{
     color: #6B625A;
     margin-bottom: 2em;
 }
-.Sous-titre2{
+.sous-titre2{
     color: #6B625A;
     margin-bottom: 20px;
 }
-.textInfo1{
+.text-info1{
     color: #6B625A;
 }
-.textInfo2{
+.text-info2{
     color: #A9927D;
+}
+.text-info3{
+    color: #6B625A;
+    font-size: 15px;
 }
 .header{
     height: 13vh;
@@ -45,22 +49,62 @@ padding: 0;
     background-color: #E9E3DE;
     margin-bottom: 2em;
     font-size: 18px;
-
+}
+.input2{
+    height: 90px;
+    width: 340px;
+    border-radius:10px;
+    border-color: black;
+    border: solid;
+    border-width: 1px;
+    background-color: #E9E3DE;
+    margin-bottom: 2em;
+    font-size: 14px;
 
 }
-.BoutonValidation{
+.import{
+    background-color: #E9E3DE;
+    margin-bottom: 2em;
+    font-size: 18px;
+
+}
+.bouton-validation{
     margin-top: 2em;
     border-radius: 50px;
     height: 65px;
     width: 300px;
     border: none;
-    background: linear-gradient(to right,#3772FF, #7449EE);    
+    background: linear-gradient(to right,#3772FF, #D749EE);    
     font-family: 'comfortaa';
     color: White;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
+}
+.bouton-validation.disabled{
+    opacity: 0.5;
+}
+.condition{
+    display: flex;
+    margin-bottom: 30px;
+    color: #6B625A;
+}
+.checkbox-condition{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: #E9E3DE;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #6B625A;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
 }
 
+.checkbox-condition:checked {
+    background-color: #3772FF;
+}
 body{
     background-color: #E9E3DE;
 

@@ -15,20 +15,20 @@
 </head>
 <body>
   <header class="header">
-    <h1 Class="Titre">Opinion.</h1>
+    <h1 Class="titre">Opinion.</h1>
   </header>
 
   <form action="../register/register3.php" method="post" class="corps">
-    <h2 class="Sous-titre">Choisissez un nom d'utilisateur unique.</h2>
+    <h2 class="sous-titre">Choisissez un nom d'utilisateur unique.</h2>
 
-    <input type="text" name="EntreeUserName" class="input" placeholder=" @nom d'utilisateur"><br> 
+    <input type="text" name="entree-user-name" class="input" placeholder=" @nom d'utilisateur"><br> 
 
-    <text class="textInfo1">
+    <p class="text-info1">
     Ce nom est unique : aucun autre utilisateur ne pourra l’utiliser.
     Il sera affiché publiquement sur votre profil et sera attaché au contenu que vous publierez.<br>
-    </text> 
+    </p> 
  
-    <input type="submit" name="BoutonValidation" class="BoutonValidation"  value="Continuer">
+    <input type="submit" name="bouton-validation" class="bouton-validation"  value="Continuer">
 
     </form>
 

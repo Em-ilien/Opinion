@@ -14,24 +14,24 @@
 </head>
 <body>
   <header class="header">
-    <h1 Class="Titre">Opinion.</h1>
+    <h1 Class="titre">Opinion.</h1>
   </header>
 
-  <form action="../register/register3.php" method="post" class="corps">
-    <h2 class="Sous-titre2">Adresse e-mail</h2>
+  <form action="../register/register4.php" method="post" class="corps">
+    <h2 class="sous-titre2">Adresse e-mail</h2>
 
-    <input type="text" name="EntreeUserName" class="input" placeholder=" Exemple@gmail.com"><br> 
+    <input type="text" name="mail" class="input" placeholder=" Exemple@gmail.com"><br> 
 
-    <h2 class="Sous-titre2">Mot de passe</h2>
+    <h2 class="sous-titre2">Mot de passe</h2>
 
-    <input type="text" name="EntreeUserName" class="input" placeholder=" *************"><br> 
-    <text class="textInfo1">
+    <input type="text" name="password" class="input" placeholder=" *************"><br> 
+    <p class="text-info1">
     Votre adresse e-mail et votre mot de passe constitueront les deux identifiants permettant de vous authentifier. <br>
     Nous sommes susceptibles de vous adresser des courriels afin de vous informer des modifications de nos conditions ou d'autres informations importantes 
     (comme par exemple pour vous notifier d'évènements importants liés à la sécurité de votre compte).<br>
-    </text> 
+    </p> 
  
-    <input type="submit" name="BoutonValidation" class="BoutonValidation"  value="Continuer">
+    <input type="submit" name="bouton-validation" class="bouton-validation"  value="Continuer">
 
     </form>
   
