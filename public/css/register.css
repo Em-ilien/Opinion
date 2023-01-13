@@ -90,7 +90,7 @@ form .background-title {
     background-color: #E9E3DE;
     margin-bottom: 2em;
     font-size: 18px;
-
+*/
 
 }
 .bouton-validation{
@@ -112,6 +112,12 @@ form .background-title {
 }
 .bouton-validation:hover {
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.25);    
+}
+
+form label input[type='checkbox'] {
+    width: initial;
+    height: initial;
+    display: initial;
 }
 
 .checkbox-condition:checked {
