@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opinion</title>
+    <link rel="shortcut icon" href="public/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/fil.css">
     <link rel="stylesheet" href="public/css/header.css">
-    <link href="https://fonts.cdnfonts.com/css/coolvetica" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/comfortaa" rel="stylesheet">
     <title>Opinion.</title>
 </head>
 <body>

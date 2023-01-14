@@ -1,6 +1,6 @@
 <?php 
 
-if (isset($_POST['bouton-validation'])) {
+if (isset($_POST['validation-button'])) {
     header("Location: ?page=user");
     exit();
 }

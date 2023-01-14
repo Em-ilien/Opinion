@@ -28,22 +28,23 @@ form .background-title {
     }
 }
 
-.titre{
+.title{
     color: white;
     font-family:'Coolvetica';
     font-weight: 400;
     color: #E9E3DE;
     padding: 0.8em 1.5em;
+    cursor: pointer;
 }
-.titre .dot {
+.title .dot {
     font-size: 1.5rem;
 }
-.sous-titre{
+.subtitle{
     color: #6B625A;
     margin-bottom: 2em;
 }
 
-.sous-titre2{
+.subtitle2{
     color: #6B625A;
     margin-bottom: 20px;
 }
@@ -66,7 +67,7 @@ form .background-title {
     align-items: center;
     justify-content: center;
 }
-.corps{
+form{
     font-family: 'Inter';
 
     width: fit-content;
@@ -75,11 +76,11 @@ form .background-title {
     max-width: calc(100vw - 1em);
     padding: 0 0.5em;
 }
-.corps > * {
+form > * {
     width: fit-content;
     max-width: 100%;
 }
-.corps p {
+form p {
     max-width: 40em;
 }
 .input{
@@ -113,7 +114,7 @@ form input[type='submit'].disabled {
     cursor: not-allowed;
 }
 
-.bouton-validation{
+.validation-button{
     border-radius: 50px;
     height: 3em;
     width: 16em;
@@ -130,7 +131,7 @@ form input[type='submit'].disabled {
     display: block;
     cursor: pointer;
 }
-.bouton-validation:hover {
+.validation-button:hover {
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.25);    
 }
 
