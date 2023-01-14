@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,28 +15,35 @@
     <h1 class="titre">Opinion<span class="dot">.</span></h1>
   </header>
 
-  <form action="?page=register/4" method="post" class="corps">
-    <label>
-      Adresse e-mail
-      <input type="text" name="username" class="input" placeholder="Exemple@gmail.com"><br>
-    </label>
+  <div class="form-ctn">
 
-    <label>
-      Mot de passe
-      <input type="text" name="password" class="input" placeholder="*************"><br>
-    </label>
+    <form action="?page=register/4" method="post" class="corps">
+      <h1 class="background-title">Inscription</h1>
+      <div>
+        <label>
+          Adresse e-mail
+          <input type="text" name="username" class="input" placeholder="Exemple@gmail.com"><br>
+        </label>
 
-    <p class="text-info1">
-      Votre adresse e-mail et votre mot de passe constitueront les deux identifiants permettant de vous authentifier.
-      <br>
-      Nous sommes susceptibles de vous adresser des courriels afin de vous informer des modifications de nos conditions
-      ou d'autres informations importantes
-      (comme par exemple pour vous notifier d'évènements importants liés à la sécurité de votre compte).<br>
-    </p>
+        <label>
+          Mot de passe
+          <input type="text" name="password" class="input" placeholder="*************"><br>
+        </label>
 
-    <input type="submit" name="bouton-validation" class="bouton-validation" value="Continuer">
+        <p class="text-info1">
+          Votre adresse e-mail et votre mot de passe constitueront les deux identifiants permettant de vous
+          authentifier.
+          <br>
+          Nous sommes susceptibles de vous adresser des courriels afin de vous informer des modifications de nos
+          conditions
+          ou d'autres informations importantes
+          (comme par exemple pour vous notifier d'évènements importants liés à la sécurité de votre compte).<br>
+        </p>
 
-  </form>
+        <input type="submit" name="bouton-validation" class="bouton-validation" value="Continuer">
+      </div>
+
+    </form>
 
 </body>
 

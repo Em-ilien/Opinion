@@ -47,8 +47,10 @@ form .background-title {
     color: #6B625A;
     margin-bottom: 20px;
 }
-.text-info1{
+.text-info1, form .checkbox-condition-label {
     color: #6B625A;
+    width: 30em;
+    max-width: fit-content;
 }
 .text-info2{
     color: #A9927D;
@@ -78,7 +80,7 @@ form .background-title {
     max-width: 100%;
 }
 .corps p {
-    max-width: 50em;
+    max-width: 40em;
 }
 .input{
     /*! height: 65px; 
@@ -93,6 +95,24 @@ form .background-title {
 */
 
 }
+
+form label input[type='date'] {
+    color: #A9927D;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Comfortaa';
+    letter-spacing: 5px;
+}
+
+form input[type='submit'] {
+    max-width: 100%;
+}
+
+form input[type='submit'].disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 .bouton-validation{
     border-radius: 50px;
     height: 3em;

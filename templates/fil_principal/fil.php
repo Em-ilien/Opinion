@@ -22,7 +22,7 @@
                 <li><a href=".">Accueil</a></li>
                 <li><a href=".">Fil d'actualité</a></li>
                 <li><a href="?page=user&user=<?= $userId ?>">Profil</a></li>
-                <li><a href="#">Déconnexion</a></li> <!-- TODO: supprimer le lien et ouvrir une popup avec du JS -->
+                <li><a href="?page=logout">Déconnexion</a></li> <!-- TODO: supprimer le lien et ouvrir une popup avec du JS -->
             </ul>
             <div class="search-bar-header">
                 <input type="text" name="search" placeholder="Rechercher">

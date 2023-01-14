@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +15,25 @@
     <h1 class="titre">Opinion<span class="dot">.</span></h1>
   </header>
 
-  <form action="?page=register/3" method="post" class="corps">
-  <label>
-    Choisissez un nom d'utilisateur unique.
-    <input type="text" name="username" class="input" placeholder="@nom d'utilisateur"><br>
-  </label>
+  <div class="form-ctn">
 
-    <p class="text-info1">
-      Ce nom est unique : aucun autre utilisateur ne pourra l'utiliser.
-      Il sera affiché publiquement sur votre profil et sera attaché au contenu que vous publierez.<br>
-    </p>
+    <form action="?page=register/3" method="post" class="corps">
+      <h1 class="background-title">Inscription</h1>
+      <div>
+        <label>
+          Choisissez un nom d'utilisateur unique.
+          <input type="text" name="username" class="input" placeholder="@nom d'utilisateur"><br>
+        </label>
 
-    <input type="submit" name="bouton-validation" class="bouton-validation" value="Continuer">
+        <p class="text-info1">
+          Ce nom est unique : aucun autre utilisateur ne pourra l'utiliser.
+          Il sera affiché publiquement sur votre profil et sera attaché au contenu que vous publierez.<br>
+        </p>
 
-  </form>
+        <input type="submit" name="bouton-validation" class="bouton-validation" value="Continuer">
+
+      </div>
+    </form>
 
 </body>
 
