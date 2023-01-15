@@ -25,7 +25,7 @@ loginForm.addEventListener("submit", (e) => {
             error.innerHTML = xhr.response.error;
 
             setTimeout(() => {
-                loginForm.querySelector("div").insertBefore(error, document.querySelector(".bouton-validation"));
+                loginForm.querySelector("div").insertBefore(error, document.querySelector(".validation-button"));
             }, 100);
         }
     };

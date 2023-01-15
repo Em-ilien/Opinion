@@ -49,4 +49,14 @@ class UserDAO
 
         return $password['passwordUser'];
     }
+
+    public static function createUser($nickname, $username, $email, $password, $birthday, $biography)
+    {
+        $db = Database::getInstance();
+
+        $stmt = $db->prepare('INSERT INTO user(nicknameUser, usernameUser, emailUser, passwordUser, birthdayUser, biographyUser) VALUES (?, ?, LOWER(?), ?, ?, ?)');
+        $stmt->execute(array($nickname, $username, $email, $password, $birthday, $biography));
+
+        return (new UserDAO)->getUserByUsername($username);
+    }
 }

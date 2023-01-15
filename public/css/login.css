@@ -13,7 +13,7 @@ form label {
     font-weight: 500;
 }
 
-form label input {
+form label input, form label textarea {
     display: block;
     background: none;
     box-shadow: none;
@@ -26,6 +26,10 @@ form label input {
     font-family: 'Comfortaa';
     font-weight: 300;
     max-width: calc(100% - 2em);
+}
+
+form label textarea {
+    width: 100%;
 }
 
 .register-link {
@@ -44,7 +48,7 @@ form label input {
     transition: 0.5s;
 }
 
-.login-error {
+.login-error, .register-error {
   color: #D92452;
   font-weight: 700;
   font-family: 'Inter';

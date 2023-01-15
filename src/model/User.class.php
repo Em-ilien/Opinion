@@ -72,7 +72,8 @@ class User {
     }
 
     public function setAvatarImage($newAvatarFilePath) {
-        move_uploaded_file($newAvatarFilePath, __DIR__ . "../../" . $this->getAvatarImagePath());
+        $toDirPath = __DIR__ . "/../../" . $this->getAvatarImagePath();
+        rename($newAvatarFilePath, $toDirPath);
     }
 
     public function __toString() {

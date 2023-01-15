@@ -28,27 +28,30 @@ form .background-title {
     }
 }
 
-.titre{
+.title{
     color: white;
     font-family:'Coolvetica';
     font-weight: 400;
     color: #E9E3DE;
     padding: 0.8em 1.5em;
+    cursor: pointer;
 }
-.titre .dot {
+.title .dot {
     font-size: 1.5rem;
 }
-.sous-titre{
+.subtitle{
     color: #6B625A;
     margin-bottom: 2em;
 }
 
-.sous-titre2{
+.subtitle2{
     color: #6B625A;
     margin-bottom: 20px;
 }
-.text-info1{
+.text-info1, form .checkbox-condition-label {
     color: #6B625A;
+    width: 30em;
+    max-width: fit-content;
 }
 .text-info2{
     color: #A9927D;
@@ -64,7 +67,7 @@ form .background-title {
     align-items: center;
     justify-content: center;
 }
-.corps{
+form{
     font-family: 'Inter';
 
     width: fit-content;
@@ -73,12 +76,12 @@ form .background-title {
     max-width: calc(100vw - 1em);
     padding: 0 0.5em;
 }
-.corps > * {
+form > * {
     width: fit-content;
     max-width: 100%;
 }
-.corps p {
-    max-width: 50em;
+form p {
+    max-width: 40em;
 }
 .input{
     /*! height: 65px; 
@@ -93,7 +96,25 @@ form .background-title {
 */
 
 }
-.bouton-validation{
+
+form label input[type='date'] {
+    color: #A9927D;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Comfortaa';
+    letter-spacing: 5px;
+}
+
+form input[type='submit'] {
+    max-width: 100%;
+}
+
+form input[type='submit'].disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.validation-button{
     border-radius: 50px;
     height: 3em;
     width: 16em;
@@ -110,7 +131,7 @@ form .background-title {
     display: block;
     cursor: pointer;
 }
-.bouton-validation:hover {
+.validation-button:hover {
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.25);    
 }
 
