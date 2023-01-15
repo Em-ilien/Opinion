@@ -45,12 +45,12 @@
                     <div class="identity">
                         <img src="<?= $askedUser->getAvatarImagePath() ?>" alt="Avatar" class="avatar">
                         <span class="nickname">
-                            <?= $user->getNickname() ?>
+                            <?= $askedUser->getNickname() ?>
                         </span>
-                        <span class="username">@<?= $user->getUsername() ?></span>
+                        <span class="username">@<?= $askedUser->getUsername() ?></span>
                     </div>
                     <div class="biography">
-                        <p><?= $user->getBiography() ?></p>
+                        <p><?= $askedUser->getBiography() ?></p>
                     </div>
                 </div>
                 <?php if ($askedUserId == $userId) { ?>
