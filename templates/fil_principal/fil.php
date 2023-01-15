@@ -34,5 +34,97 @@
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="fil">
+            <div class="post">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="public/img/no_icon.png" alt="icône utilisateur">
+                    </div>
+                    <div class="profile-name">
+                        <h3>John Doe</h3>
+                    </div>
+                </div>
+                <div class="content" onmouseover="setCommentariesVisible(this)" onmouseout="setCommentariesHidden(this)">
+                    <div class="message">
+                        Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!
+                    </div>
+                    <div class="content-footer">
+                        <div class="see-commentaries hidden">
+                            <a href="#">Voir les commentaires</a>
+                        </div>
+                        <div class="date">
+                            le 14 janvier 2021 à 14h00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="public/img/no_icon.png" alt="icône utilisateur">
+                    </div>
+                    <div class="profile-name">
+                        <h3>Emmanuel Patron</h3>
+                    </div>
+                </div>
+                <div class="content" onmouseover="setCommentariesVisible(this)" onmouseout="setCommentariesHidden(this)">
+                    <div class="message">
+                        Hier je lisais un rapport dans le Monde qui disait que l’immigration était le problème de toute conséquence du déclin du pays : inflation, racisme, islmamisation, dégradation de la culture et des traditions... Il faut peut-être penser à réparer le problème à la source.
+
+                        J’en parlais à ma famille et ils ne comprennent pas trop pourquoi l’immigration est un problème.
+
+                        En tout cas, moi, je saurais qui voter à la présidentielle en 2027. Et vous, que ferez-vous ?
+                    </div>
+                    <div class="content-footer">
+                        <div class="see-commentaries hidden">
+                            <a href="#">Voir les commentaires</a>
+                        </div>
+                        <div class="date">
+                            le 14 janvier 2021 à 16h00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="public/img/no_icon.png" alt="icône utilisateur">
+                    </div>
+                    <div class="profile-name">
+                        <h3>Emmanuel Patron</h3>
+                    </div>
+                </div>
+                <div class="content" onmouseover="setCommentariesVisible(this)" onmouseout="setCommentariesHidden(this)">
+                    <div class="message">
+                        Vous êtes vraiment tous des gros fdp
+                    </div>
+                    <div class="content-footer">
+                        <div class="see-commentaries hidden">
+                            <a href="#">Voir les commentaires</a>
+                        </div>
+                        <div class="date">
+                            le 14 janvier 2021 à 16h00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="btn">
+                Écrire
+            </div>
+            <div class="tri">
+                <input type="radio" name="tri" id="commentated">
+                <label for="commentated">Les + commentés</label>
+                <input type="radio" name="tri" id="recent">
+                <label for="recent">Les + récents</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="public/js/fil.js"></script>
 </body>
 </html>
