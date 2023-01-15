@@ -38,7 +38,7 @@
             </div>
         </div>
     </header>
-
+    
     <div class="container">
         <div class="profil">
             <h1>Mon profil</h1>
@@ -67,7 +67,7 @@
                 <div>
                     <label>
                         Biographie
-                        <textarea name="biography"><?= $user->getBiography() ?></textarea>
+                        <textarea disabled name="biography"><?= $user->getBiography() ?></textarea>
                     </label>
                     <button class="edit-btn btn">Modifier</button>
                 </div>
@@ -100,7 +100,8 @@
             </div>
         </div>
     </div>
-    <script src="public/js/fil.js"></script>
+
+    <script src="public/js/editing-account-informations.js"></script>
 </body>
 
 </html>
