@@ -7,7 +7,10 @@ editButtons.forEach((editButton) => {
         function setTextInputEditable() {
             input.removeAttribute("disabled");
             input.focus();
-            input.setSelectionRange(0, input.value.length);
+            if (input.type != "date")
+                input.setSelectionRange(0, input.value.length);
+            if (input.type == "password")
+                input.value = "";
     
             let oldInputValue = input.value;
     
@@ -24,7 +27,15 @@ editButtons.forEach((editButton) => {
         }
 
         function setImageInputEditable() {
+            //create form enctype="multipart/form-data"
+            let form = document.createElement("form");
+            form.method = "POST";
+            form.enctype = "multipart/form-data";
+            form.style.display = "none";
+            input.parentElement.appendChild(form);
+
             let fileInput = document.createElement("input");
+            form.append(fileInput);
             fileInput.type = "file";
             fileInput.accept = "image/*";
             fileInput.style.display = "none";
@@ -43,17 +54,36 @@ editButtons.forEach((editButton) => {
             fileInput.click();
         }
 
-        function saveInput() {
-            input.setAttribute("disabled", "");
-            editButton.innerHTML = "Modifier";
+        function saveTextInput() {
+            const data = new FormData();
+            data.append(input.name, input.value);
+
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", "src/ajax/update_" + input.name + ".php", true);
+            xhr.responseType = "json";
+            xhr.onload = () => {
+                if (xhr.status == 200) {
+                    if (xhr.response.status == "success") {
+                        input.setAttribute("disabled", "");
+                        editButton.innerHTML = "Modifier";
+                        editButton.removeAttribute("style");
+                        return;
+                    }
+
+                    window.alert("Erreur : " + xhr.response.error);
+                }
+            };
+            xhr.send(data);
         }
 
-        if (editButton.innerHTML == "Modifier")
-            if (input.type != "image")
-                setTextInputEditable();
-            else
+        if (input.type == "image" && editButton.innerHTML == "Modifier") {
                 setImageInputEditable();
+            return;
+        }
+        
+        if (editButton.innerHTML == "Modifier")
+            setTextInputEditable();
         else
-            saveInput();
+            saveTextInput();
     });
 });

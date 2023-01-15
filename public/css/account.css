@@ -15,7 +15,13 @@ body {
 }
 
 .container > div {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2em;
+  border-radius: 1em;
+  padding: 1em 2em 2em;
+  border: 1px solid #A9927D50;
 }
 
 .container h1 {
@@ -30,11 +36,11 @@ body {
 }
 
 .container > div .fields {
-  margin-top: 2em;
+  margin-top: 2.5em;
   font-family: 'Inter';
   display: flex;
   flex-direction: column;
-  gap: 1.25em;
+  gap: 1em;
 }
 
 .container > div .fields > div {
@@ -48,10 +54,11 @@ body {
   display: block;
   font-style: normal;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 0.9em;
   color: rgba(57, 50, 50, 0.7);
   width: fit-content;
   flex-grow: 2;
+  margin-top: 0.25em;
 }
 
 .container > div .fields > div label input,
@@ -59,7 +66,7 @@ body {
   display: block;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.25em;
   color: rgba(16, 11, 0, 0.75);
   background: none;
   border: none;
@@ -73,7 +80,10 @@ body {
 }
 
 .container > div .fields > div label textarea {
-  height: 8em;
+  height: 6em;
+  font-weight: 500;
+  font-family: 'Inter';
+  font-size: 1em;
 }
 
 .container > div .fields > div .edit-btn {
@@ -98,8 +108,15 @@ body {
 }
 
 .container > div .fields .avatar input[type='image'] {
-  width: 4rem;
+  width: 3.75rem;
     border-radius: 50em;
     box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
     background: #00000050;
+}
+
+.container > div .privacy {
+  font-family: 'Inter';
+  color: rgba(57, 50, 50, 0.7);
+  font-size: 0.65em;
+  width: 25rem;
 }

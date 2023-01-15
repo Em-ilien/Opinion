@@ -60,36 +60,28 @@ class User {
         return "public/img/avatars/user-" . $this->id . ".png";
     }
 
-    // public function setUsername($username) {
-    //     $this->username = $username;
-    // }
+    public function setUsername($username) {
+        $this->username = $username;
+    }
 
-    // public function setNickname($nickname) {
-    //     $this->nickname = $nickname;
-    // }
+    public function setNickname($nickname) {
+        $this->nickname = $nickname;
+    }
 
-    // public function setEmail($email) {
-    //     $this->email = $email;
-    // }
+    public function setEmail($email) {
+        $this->email = $email;
+    }
 
-    // public function setPassword($password) {
+    public function setBiography($biography) {
+        $this->biography = $biography;
+    }
 
-    // }
-
-    // public function setBiography($biography) {
-    //     $this->biography = $biography;
-    // }
-
-    // public function setBirthday($birthday) {
-    //     $this->birthday = $birthday;
-    // }
+    public function setBirthday($birthday) {
+        $this->birthday = $birthday;
+    }
 
     public function setAvatarImage($newAvatarFilePath) {
         $toDirPath = __DIR__ . "/../../" . $this->getAvatarImagePath();
         rename($newAvatarFilePath, $toDirPath);
-    }
-
-    public function __toString() {
-        return "User [id=" . $this->id . ", username=" . $this->username . ", nickname=" . $this->nickname . ", email=" . $this->email . ", password=" . $this->password . ", biography=" . $this->biography . ", avatar=" . $this->avatar . "]";
     }
 }

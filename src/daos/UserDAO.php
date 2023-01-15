@@ -74,4 +74,20 @@ class UserDAO
 
         return (new UserDAO)->getUserByUsername($username);
     }
+
+    public static function update($user)
+    {
+        $db = Database::getInstance();
+
+        $stmt = $db->prepare('UPDATE user SET nicknameUser = ?, usernameUser = ?, emailUser = LOWER(?), birthdayUser = ?, biographyUser = ? WHERE idUser = ?');
+        $stmt->execute(array($user->getNickname(), $user->getUsername(), $user->getEmail(), $user->getBirthday(), $user->getBiography(), $user->getId()));
+    }
+
+    public static function updatePassword($user, $password)
+    {
+        $db = Database::getInstance();
+
+        $stmt = $db->prepare('UPDATE user SET passwordUser = ? WHERE idUser = ?');
+        $stmt->execute(array($password, $user->getId()));
+    }
 }
