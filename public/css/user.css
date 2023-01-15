@@ -1,0 +1,93 @@
+body {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: calc(100vh - 12vh);
+}
+
+aside.user-profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid black;
+    width: 24vw;
+    font-family: 'Inter';
+    padding: 2em 0;
+    height: calc(100% - 4em);
+}
+
+aside.user-profil .informations {
+    padding: 0 2em;
+}
+
+aside.user-profil .informations .identity {
+    display: flex;
+    flex-direction: column;
+}
+
+aside.user-profil .informations .identity .avatar {
+    width: 5rem;
+    border-radius: 50em;
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
+    margin-left: 1em;
+}
+
+
+aside.user-profil .informations .identity .nickname {
+    font-weight: 500;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 0.5em;
+}
+
+
+aside.user-profil .informations .identity .username {
+    font-weight: 500;
+    font-size: 0.9em;
+    color: #A9927D;
+}
+
+aside.user-profil .informations .biography {
+    margin: 2em 0 1em;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 0.8em;
+    line-height: 1.3em;
+    text-align: justify;
+    color: #6B625A;
+}
+
+aside.user-profil .edit-btn-ctn a {
+    display: none;
+    font-family: 'Inter';
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3772FF;
+    text-decoration: none;
+    width: fit-content;
+    padding: 1em;
+    margin-left: 1em;
+}
+aside.user-profil:hover .edit-btn-ctn a {
+    display: block;
+}
+
+aside.user-profil .write-btn {
+    margin: 0 auto;
+}
+
+
+main.fil {
+    height: calc(100% - 6em);
+    overflow-y: scroll;
+    flex-grow: 1;
+    padding: 3em 7em;
+}

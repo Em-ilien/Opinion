@@ -1,5 +1,9 @@
 <?php
 
+require_once(__DIR__ . "/src/model/User.class.php");
+require_once(__DIR__ . "/src/model/Comment.class.php");
+require_once(__DIR__ . "/src/model/Post.class.php");
+
 if (pageParamaterIsSet()) {
     $page = $_GET["page"];
 } else {
@@ -8,25 +12,11 @@ if (pageParamaterIsSet()) {
 
 session_start();
 
-// if (!userIsConnected()) {
-//     header("Location: ?page=login");
-//     exit();
-// }
-
-
 tryRequire(__DIR__ . "/src/controllers/" . $page . ".php");
 
 function pageParamaterIsSet()
 {
     return isset($_GET["page"]) && $_GET["page"] != "";
-}
-function pageParameterContainsLogin($page)
-{
-    return strpos($page, "login") !== false;
-}
-function userIsConnected()
-{
-    return isset($_SESSION["user"]);
 }
 function tryRequire($path)
 {

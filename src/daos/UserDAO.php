@@ -5,6 +5,21 @@ require_once(__DIR__ . '/../model/Database.class.php');
 class UserDAO
 {
 
+    public static function getUserById($id)
+    {
+        $db = Database::getInstance();
+
+        $stmt = $db->prepare('SELECT * FROM user WHERE idUser = ?');
+        $stmt->execute(array($id));
+
+        $user = $stmt->fetch();
+
+        if (!$user)
+            return null;
+
+        return new User($user['idUser'], $user['usernameUser'], $user['nicknameUser'], $user['emailUser'], $user['biographyUser']);
+    }
+
     public static function getUserByEmail($email)
     {
         $db = Database::getInstance();
