@@ -21,7 +21,7 @@ header div a{
     text-decoration: none;
 }
 
-.logo{
+header .logo{
     font-family: "Coolvetica";
     color: #E9E3DE;
     font-weight: 400;
@@ -29,7 +29,7 @@ header div a{
     margin-left: 1.5rem;
 }
 
-input[type=text]{
+header input[type='text']{
     border-radius: 12px;
     height: 4.5vh;
     width: 20vw;
@@ -41,19 +41,19 @@ input[type=text]{
     margin-right: 1rem;
 }
 
-input[type=text]::placeholder{
+header input[type='text']::placeholder{
     color: #E9E3DE;
     font-weight: 500;
     font-family: "Inter", "Coolvetica", "Comfortaa", "Roboto";
 }
 
-input[type=text]:hover{
+header input[type=text]:hover{
     background-color: #C3B3A4;
     color: #E9E3DE;
     font-weight: 500;
 }
 
-ul{
+header ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,33 +61,33 @@ ul{
     margin-right: 1.5rem;
 }
 
-ul li{
+header ul li{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
 
-ul li a{
+header ul li a{
     color: #E9E3DE;
     font-weight: 600;
     text-decoration: none;
     font-family: "Inter";
 }
 
-a:hover{
+header a:hover{
     cursor: pointer;
 }
 
-ul li a:hover{
+header ul li a:hover{
     text-decoration: underline;
 }
 
-.menu-header{
+header .menu-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.user-menu{
+header .user-menu{
     display: flex;
     align-items: center;
     margin-right: 3rem;
@@ -96,13 +96,13 @@ ul li a:hover{
     padding-bottom: 0.5rem;
 }
 
-.user-menu:hover{
+header .user-menu:hover{
     cursor: pointer;
     background-color: hsla(27, 20%, 89%, 0.1);
     border-radius: 42px;
 }
 
-.user-icon{
+header .user-icon{
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -113,22 +113,22 @@ ul li a:hover{
     margin-left: 1rem;
 }
 
-.user-menu:hover .user-icon{
+header .user-menu:hover .user-icon{
     cursor: pointer;
     border: 3px solid #4BC6B9;
 }
 
-.user-menu:hover #user-triangle-menu{
+header .user-menu:hover #user-triangle-menu{
     cursor: pointer;
     border-top : 0.519rem solid #4BC6B9;
 }
 
-#user-img{
+header #user-img{
     max-width:100%;
     max-height:100%;
 }
 
-#user-triangle-menu{
+header #user-triangle-menu{
     display : inline-block;
     height : 0;
     width : 0;

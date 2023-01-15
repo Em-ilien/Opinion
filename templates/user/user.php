@@ -32,7 +32,7 @@
             </div>
             <div class="user-menu">
                 <!-- TODO: change default avatar to current user avatar, if exists -->
-                <span class="user-icon"><img id="user-img" src="public/img/no_icon.png" alt="icône utilisateur"></span>
+                <span class="user-icon"><img id="user-img" src="public/img/default_avatar_user.png" alt="icône utilisateur"></span>
                 <span id="user-triangle-menu"></span>
             </div>
         </div>
@@ -53,13 +53,13 @@
                         <p><?= $askedUser->getBiography() ?></p>
                     </div>
                 </div>
-                <?php if ($askedUserId == $userId) { ?>
+                <?php if ($askedUser->getId() == $user->getId()) { ?>
                     <div class="edit-btn-ctn">
                         <a href="?page=account" class="edit-btn">Modifier</a>
                     </div>
                 <?php } ?>
             </div>
-            <?php if ($askedUserId == $userId) { ?>
+            <?php if ($askedUser->getId() == $user->getId()) { ?>
                 <div class="btn write-btn">
                     Écrire
                 </div>
@@ -69,7 +69,7 @@
             <div class="post">
                 <div class="profile">
                     <div class="profile-img">
-                        <img src="public/img/no_icon.png" alt="icône utilisateur">
+                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
                     </div>
                     <div class="profile-name">
                         <h3>John Doe</h3>
@@ -92,7 +92,7 @@
             <div class="post">
                 <div class="profile">
                     <div class="profile-img">
-                        <img src="public/img/no_icon.png" alt="icône utilisateur">
+                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
                     </div>
                     <div class="profile-name">
                         <h3>John Doe</h3>
@@ -115,7 +115,7 @@
             <div class="post">
                 <div class="profile">
                     <div class="profile-img">
-                        <img src="public/img/no_icon.png" alt="icône utilisateur">
+                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
                     </div>
                     <div class="profile-name">
                         <h3>John Doe</h3>

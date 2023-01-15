@@ -17,7 +17,7 @@ class UserDAO
         if (!$user)
             return null;
 
-        return new User($user['idUser'], $user['usernameUser'], $user['nicknameUser'], $user['emailUser'], $user['biographyUser']);
+        return new User($user['idUser'], $user['usernameUser'], $user['nicknameUser'], $user['emailUser'], $user['biographyUser'], $user['birthdayUser']);
     }
 
     public static function getUserByEmail($email)
@@ -32,7 +32,7 @@ class UserDAO
         if (!$user)
             return null;
 
-        return new User($user['idUser'], $user['usernameUser'], $user['nicknameUser'], $user['emailUser'], $user['biographyUser']);
+        return new User($user['idUser'], $user['usernameUser'], $user['nicknameUser'], $user['emailUser'], $user['biographyUser'], $user['birthdayUser']);
     }
 
     public static function getUserByUsername($username)
@@ -47,7 +47,7 @@ class UserDAO
         if (!$user)
             return null;
 
-        return new User($user['idUser'], $user['usernameUser'], $user['nicknameUser'], $user['emailUser'], $user['biographyUser']);
+        return new User($user['idUser'], $user['usernameUser'], $user['nicknameUser'], $user['emailUser'], $user['biographyUser'], $user['birthdayUser']);
     }
 
     public static function getPassword($user)

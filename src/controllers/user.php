@@ -7,16 +7,17 @@ if (!isset($_SESSION['user'])) {
 
 require_once(__DIR__ . '/../daos/UserDAO.php');
 
-//get complete class
 $user = $_SESSION['user'];
-$userId = $user->getId();
 
 if (isset($_GET['userId'])) {
-    $askedUserId = $_GET['userId'];
+    $askedUser = (new UserDAO)->getUserById($_GET['userId']);
 } else {
-    $askedUserId = $userId;
+    $askedUser = (new UserDAO)->getUserById($user->getId());
 }
 
-$askedUser = (new UserDAO)->getUserById($askedUserId);
+if ($askedUser == null) {
+    header('Location: ?page=user');
+    exit();
+}
 
 require(__DIR__ . "/../../templates/user/user.php");
