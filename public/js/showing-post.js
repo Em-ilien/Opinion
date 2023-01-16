@@ -4,7 +4,7 @@ function redirectToUserPageOnClick(e, userIdentity) {
     if (e.target.parentElement != userIdentity)
         return;
     
-    window.location = "?page=user&userId=" + userIdentity.getAttribute("data-user-id");
+    window.location = "index.php?page=user&userId=" + userIdentity.getAttribute("data-user-id");
 }
     
 let shownPosts = [];

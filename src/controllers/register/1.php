@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST['button-next'])) {
-    header("Location: ?page=register/register2");
+    header("Location: index.php?page=register/register2");
     exit();
 }
 

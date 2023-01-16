@@ -1,12 +1,12 @@
 <?php 
 
 if (!isset($_SESSION['nickname'])) {
-    header("Location: ?page=register/2");
+    header("Location: index.php?page=register/2");
     exit;
 }
 
 if (!isset($_SESSION['username'])) {
-    header("Location: ?page=register/3");
+    header("Location: index.php?page=register/3");
     exit;
 }
 

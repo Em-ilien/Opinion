@@ -16,7 +16,7 @@
 		<h1 onclick="document.location.href = '.'" class="title">Opinion<span class="dot">.</span></h1>
 	</header>
 	<div class="form-ctn">
-		<form action="?page=register/2" method="post">
+		<form action="index.php?page=register/2" method="post">
 			<h1 class="background-title">Inscription</h1>
 			<div>
 				<h2 class="subtitle">Données personnelles</h2>

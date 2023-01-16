@@ -14,7 +14,7 @@ function checkUsernameRegisterByAjax(e) {
     xhr.open('POST', 'src/ajax/register_username.php', true);
     xhr.onload = () => {
         if (xhr.response.status == "success") {
-            document.location.href = '?page=register/4';
+            document.location.href = 'index.php?page=register/4';
             return;
         }
 
@@ -48,7 +48,7 @@ function checkEmailAndPasswordRegisterByAjax(e) {
     xhr.open('POST', 'src/ajax/register_email_and_password.php', true);
     xhr.onload = () => {
         if (xhr.response.status == "success") {
-            document.location.href = '?page=register/5';
+            document.location.href = 'index.php?page=register/5';
             return;
         }
 
@@ -80,7 +80,7 @@ function checkNicknameRegisterByAjax(e) {
     xhr.open('POST', 'src/ajax/register_nickname.php', true);
     xhr.onload = () => {
         if (xhr.response.status == "success") {
-            document.location.href = '?page=register/3';
+            document.location.href = 'index.php?page=register/3';
             return;
         }
 
@@ -112,7 +112,7 @@ function checkBirthdayRegisterByAjax(e) {
     xhr.open('POST', 'src/ajax/register_birthday.php', true);
     xhr.onload = () => {
         if (xhr.response.status == "success") {
-            document.location.href = '?page=register/6';
+            document.location.href = 'index.php?page=register/6';
             return;
         }
 
@@ -145,7 +145,7 @@ function checkAssentRegisterByAjax(e) {
     xhr.open('POST', 'src/ajax/register_assent.php', true);
     xhr.onload = () => {
         if (xhr.response.status == "success") {
-            document.location.href = '?page=register/9';
+            document.location.href = 'index.php?page=register/9';
             return;
         }
 

@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($_SESSION['user'])) {
-    header('Location: ?page=login');
+    header('Location: index.php?page=login');
     exit();
 }
 
@@ -16,7 +16,7 @@ if (isset($_GET['userId'])) {
 }
 
 if ($askedUser == null) {
-    header('Location: ?page=user');
+    header('Location: index.php?page=user');
     exit();
 }
 

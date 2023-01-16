@@ -15,7 +15,7 @@
 	<header class="header">
 		<h1 onclick="document.location.href = '.'" class="title">Opinion<span class="dot">.</span></h1>
 	</header>
-	<form action="?page=user" method="post">
+	<form action="index.php?page=user" method="post">
 		<h1 class="subtitle">Bienvenue sur Opinion</h1>
 		<p class="text-info3">
 			Vous pouvez dès à présent publier un post !

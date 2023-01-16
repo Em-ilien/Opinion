@@ -1,7 +1,7 @@
 <?php 
 
 if (isset($_POST['validation-button'])) {
-    header("Location: ?page=user");
+    header("Location: index.php?page=user");
     exit();
 }
 

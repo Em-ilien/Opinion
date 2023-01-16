@@ -16,7 +16,7 @@
         <h1 onclick="document.location.href = '.'" class="title">Opinion<span class="dot">.</span></h1>
     </header>
     <div class="form-ctn">
-        <form method="post" action="." class="login-form">
+        <form method="post" action="index.php" class="login-form">
             <h1 class="background-title">Connexion</h1>
             <div>
                 <label>
@@ -28,7 +28,7 @@
                     <input type="password" name="password">
                 </label>
 
-                <a class="register-link" href="?page=register/1">Pas de compte ? Inscrivez-vous.</a>
+                <a class="register-link" href="index.php?page=register/1">Pas de compte ? Inscrivez-vous.</a>
 
                 <input type="submit" class="validation-button" value="Se connecter">
             </div>

@@ -17,7 +17,7 @@ function search(e) {
 
             xhr.response.users.forEach(user => {
                 resultsDiv.innerHTML += `
-                    <div class='user' data-user-id='${user.id}' onclick='window.location="?page=user&userId=${user.id}"'>
+                    <div class='user' data-user-id='${user.id}' onclick='window.location="index.php?page=user&userId=${user.id}"'>
                         <div class='avatar'>
                             <img src='${user.avatar}' alt='Avatar'>
                         </div>

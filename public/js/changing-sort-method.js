@@ -5,6 +5,6 @@ sortInputs.forEach((sortInput) => {
         if (!sortInput.checked)
             return;
         
-        window.location = "?page=fil_principal&sortMethod=" + sortInput.value;
+        window.location = "index.php?page=fil_principal&sortMethod=" + sortInput.value;
     });
 });

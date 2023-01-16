@@ -34,7 +34,7 @@
                 </div>
                 <?php if ($askedUser->getId() == $user->getId()) { ?>
                     <div class="edit-btn-ctn">
-                        <a href="?page=account" class="edit-btn">Modifier</a>
+                        <a href="index.php?page=account" class="edit-btn">Modifier</a>
                     </div>
                 <?php } ?>
             </div>

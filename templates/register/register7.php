@@ -17,7 +17,7 @@
 	</header>
 
 	<div class="form-ctn">
-		<form action="?page=register/7" method="post">
+		<form action="index.php?page=register/7" method="post">
 			<h1 class="background-title">Inscription</h1>
 			<div>
 				<label>

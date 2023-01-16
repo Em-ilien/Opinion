@@ -17,7 +17,7 @@
 	</header>
 
 	<div class="form-ctn">
-		<form action="?page=register/10" method="post">
+		<form action="index.php?page=register/10" method="post">
 			<h1 class="background-title">Bienvenue</h1>
 			<div>
 				<h2 class="subtitle">Inscription réussie</h2>

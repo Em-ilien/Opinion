@@ -17,7 +17,7 @@
 	</header>
 
 	<div class="form-ctn">
-		<form action="?page=register/6" method="post" enctype="multipart/form-data">
+		<form action="index.php?page=register/6" method="post" enctype="multipart/form-data">
 			<h1 class="background-title">Inscription</h1>
 			<div>
 				<label>

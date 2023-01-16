@@ -1,7 +1,7 @@
 <?php
 
 if (userAlreadyLoggedIn()) {
-    header("Location: .");
+    header("Location: index.php");
     exit();
 }
 
