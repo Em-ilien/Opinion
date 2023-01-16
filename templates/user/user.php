@@ -16,7 +16,7 @@
 <body>
     <?php include(__DIR__ . '/../header.php'); ?>
     <div class="container">
-        <aside class="user-profil" data-user-id="<?= $user->getId() ?>">
+        <aside class="user-profil" data-user-id="<?= $askedUser->getId() ?>">
             <div>
                 <div class="informations">
                     <div class="user-identity">
