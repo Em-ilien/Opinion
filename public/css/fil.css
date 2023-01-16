@@ -7,16 +7,18 @@ img{
     display: flex;
     justify-content: space-between;
     height: calc(100vh - 12vh);
+    height: fit-content;
 }
 
 main.fil{
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    height: 100%;
+    height: calc(100vh - 12vh - 4em - 2em);
     padding: 2em;
     margin-top: 2em;
     width: 60%;
+    overflow-y: visible;
 }
 
 .post{
@@ -52,7 +54,7 @@ main.fil{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 2em;
+    padding: 0 0 0 2em;
     height: 2em;
 }
 

@@ -29,12 +29,12 @@ class Post {
         return $this->date;
     }
 
-    public function getPostedOnUserPage() {
-        return $this->postedOnUserPage;
+    public function isPostedOnUserPage() {
+        return ($this->postedOnUserPage == 1);
     }
 
-    public function getPostedOnFilPrincipal() {
-        return $this->postedOnFilPrincipal;
+    public function isPostedOnFilPrincipal() {
+        return ($this->postedOnFilPrincipal == 1);
     }
 
     public function getAuthor() {

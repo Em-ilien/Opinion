@@ -40,85 +40,8 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <main class="fil">
-            <div class="post">
-                <aside class="user-identity" data-user-id="<?= $user->getId() ?>">
-                    <img src="<?= $user->getAvatarImagePath() ?>" alt="Avatar" class="avatar">
-                    <span class="nickname">
-                        <?= $user->getNickname() ?>
-                    </span>
-                    <span class="username">@<?= $user->getUsername() ?></span>
-                </aside>
-                <main>
-                    <div class="content">
-                        <p>Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!</p>
-                    </div>
-                    <div class="footer">
-                        <div class="see-comments-btn-ctn">
-                            <button class="btn see-comments-btn">Voir les commentaires</button>
-                        </div>
-                        <span class="date">
-                            le 14 janvier 2021
-                        </span>
-                    </div>
-                </main>
-            </div>
-
-            <div class="post">
-                <aside class="user-identity">
-                    <img src="<?= $user->getAvatarImagePath() ?>" alt="Avatar" class="avatar">
-                    <span class="nickname">
-                        <?= $user->getNickname() ?>
-                    </span>
-                    <span class="username">@<?= $user->getUsername() ?></span>
-                </aside>
-                <main>
-                    <div class="content">
-                        <p>Hier je lisais un rapport dans le Monde qui disait que l'immigration était le problème de
-                            toute conséquence du déclin du pays : inflation, racisme, islmamisation, dégradation de la
-                            culture et des traditions... Il faut peut-être penser à réparer le problème à la source.
-
-                            J'en parlais à ma famille et ils ne comprennent pas trop pourquoi l'immigration est un
-                            problème.
-
-                            En tout cas, moi, je saurais qui voter à la présidentielle en 2027. Et vous, que ferez-vous
-                            ?</p>
-                    </div>
-                    <div class="footer">
-                        <div class="see-comments-btn-ctn">
-                            <button class="btn see-comments-btn">Voir les commentaires</button>
-                        </div>
-                        <span class="date">
-                            le 14 janvier 2021
-                        </span>
-                    </div>
-                </main>
-            </div>
-
-            <div class="post">
-                <aside class="user-identity">
-                    <img src="<?= $user->getAvatarImagePath() ?>" alt="Avatar" class="avatar">
-                    <span class="nickname">
-                        EmmanuelPatron
-                    </span>
-                    <span class="username">@EmmanuelPatron</span>
-                </aside>
-                <main>
-                    <div class="content">
-                        <p>Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!</p>
-                    </div>
-                    <div class="footer">
-                        <div class="see-comments-btn-ctn">
-                            <button class="btn see-comments-btn">Voir les commentaires</button>
-                        </div>
-                        <span class="date">
-                            le 14 janvier 2021
-                        </span>
-                    </div>
-                </main>
-            </div>
-        </main>
+    <div class="container scrollable">
+        <main class="fil"></main>
         <div class="container-right">
             <div>
                 <div class="btn write-btn" onclick="openWritingPostModal(false)">
@@ -126,11 +49,11 @@
                 </div>
                 <div class="sort">
                     <label>
-                        <input type="radio" name="sort" id="most-commented" checked>
+                        <input type="radio" name="sort" value="most-commented" <?= $sortMethod == "most-commented" ? " checked" : "" ?>>
                         Les + commentés
                     </label>
                     <label>
-                        <input type="radio" name="sort" id="lastest">
+                        <input type="radio" name="sort" value="lastest" <?= $sortMethod == "lastest" ? " checked" : "" ?>>
                         Les + récents
                     </label>
                 </div>
@@ -140,6 +63,7 @@
 
     <script src="public/js/showing-post.js"></script>
     <script src="public/js/writing.js"></script>
+    <script src="public/js/changing-sort-method.js"></script>
     <script src="public/js/form-submitability.js"></script>
 </body>
 
