@@ -102,3 +102,37 @@ main.fil {
     padding: 3em 7em;
     margin-top: 0;
 }
+
+@media (max-width:1000px) {
+    .container .fil {
+        position: initial;
+        top: 0;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
+
+@media (max-width:800px) {
+    .container {
+        flex-direction: column;
+        overflow-y scroll;
+    }
+    
+    .container aside {
+        border: none;
+        width: 100%;
+        gap: 2em;
+        height: fit-content;
+    }
+    
+    .container aside .informations {
+        margin: auto;
+        width: fit-content;
+        max-width: 20em;
+    }
+    
+    .container .fil {
+        max-height: unset;
+        height: fit-content;
+    }
+}

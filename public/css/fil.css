@@ -96,6 +96,7 @@ main.fil{
     color: #393232;
     font-weight: 500;
     font-size: 13px;
+    word-break: break-word;
 }
 
 .btn{
@@ -157,4 +158,22 @@ main.fil{
     
     width: 100%;
     padding: 1em;
+}
+
+@media (max-width:1000px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    
+    .container .container-right {
+        height: fit-content;
+        margin: auto;
+        width: fit-content;
+    }
+    
+    .container .fil {
+        width: calc(100% - 4em);
+        position: relative;
+        top: 20em;
+    }
 }

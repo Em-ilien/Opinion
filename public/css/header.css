@@ -32,13 +32,14 @@ header .logo{
 header input[type='text']{
     border-radius: 12px;
     height: 4.5vh;
-    width: 20vw;
+    width: 21em;
     background-color: #6B625A;
     text-indent: 1rem;
     color : #393232;
     font-weight: 500;
     font-family: "Inter", "Coolvetica", "Comfortaa", "Roboto";
     margin-right: 1rem;
+    max-width: calc(100vw - 3em);
 }
 
 header input[type='text']::placeholder{
@@ -139,4 +140,46 @@ header #user-triangle-menu{
     border-top : 0.519rem solid #B9EEE8;
     border-right : 0.3rem solid transparent;
     border-left : 0.3rem solid transparent;
+}
+
+@media (max-width:900px) {
+    header .menu-header ul li:nth-child(2n) {
+        display: none;
+    }
+}
+
+@media (max-width:650px) {
+    header .user-menu {
+        display: none;
+    }
+}
+
+@media (max-width:475px) {
+    header .menu-header ul li:first-child {
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+    header {
+        flex-direction: column;
+        padding: 1em;
+        gap: 1em;
+        height: fit-content;
+    }
+    
+    header .menu-header {
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .search-bar-header {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .search-bar {
+        width: 100%;
+        margin: 0;
+    }
 }
