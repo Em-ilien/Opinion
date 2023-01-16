@@ -8,4 +8,3 @@ if (isset($_POST['button-next'])) {
     Suivant();
 }
 require(__DIR__ . "/../../../templates/register/register1.php");
-
