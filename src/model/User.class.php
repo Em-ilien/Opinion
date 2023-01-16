@@ -6,13 +6,15 @@ class User {
     private $nickname;
     private $email;
     private $biography;
+    private $birthday;
 
-    public function __construct($id, $username, $nickname, $email, $biography) {
+    public function __construct($id, $username, $nickname, $email, $biography, $birthday) {
         $this->id = $id;
         $this->username = $username;
         $this->nickname = $nickname;
         $this->email = $email;
         $this->biography = $biography;
+        $this->birthday = $birthday;
     }
 
     public function isAuthorOf($post) {
@@ -43,13 +45,20 @@ class User {
         return $this->biography;
     }
 
-    public function getAvatarImagePath() {
-        return "public/img/avatars/user-" . $this->id . ".png";
+    public function getBirthday() {
+        return $this->birthday;
     }
 
-    // public function setId($id) {
-    //     $this->id = $id;
-    // }
+    public function getAvatarImagePath() {
+        $path = "public/img/avatars/user-" . $this->id . ".png";
+
+        //if file doesn't exist, return default avatar
+        if (!file_exists(__DIR__ . "/../../" . $path)) {
+            return "public/img/default_avatar_user.png";
+        }
+
+        return "public/img/avatars/user-" . $this->id . ".png";
+    }
 
     public function setUsername($username) {
         $this->username = $username;
@@ -63,19 +72,16 @@ class User {
         $this->email = $email;
     }
 
-    // public function setPassword($password) {
-    //
-    // }
-
     public function setBiography($biography) {
         $this->biography = $biography;
     }
 
-    public function setAvatarImage($newAvatarFilePath) {
-        move_uploaded_file($newAvatarFilePath, __DIR__ . "../../" . $this->getAvatarImagePath());
+    public function setBirthday($birthday) {
+        $this->birthday = $birthday;
     }
 
-    public function __toString() {
-        return "User [id=" . $this->id . ", username=" . $this->username . ", nickname=" . $this->nickname . ", email=" . $this->email . ", password=" . $this->password . ", biography=" . $this->biography . ", avatar=" . $this->avatar . "]";
+    public function setAvatarImage($newAvatarFilePath) {
+        $toDirPath = __DIR__ . "/../../" . $this->getAvatarImagePath();
+        rename($newAvatarFilePath, $toDirPath);
     }
 }

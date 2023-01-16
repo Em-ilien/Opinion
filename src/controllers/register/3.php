@@ -1,8 +1,8 @@
 <?php 
 
-if (isset($_POST['bouton-validation'])) {
-    $_SESSION['username']=$_POST['username'];
-    header("Location: ?page=register/4");
+if (!isset($_SESSION['nickname'])) {
+    header("Location: ?page=register/2");
+    exit;
 }
 
 require(__DIR__ . "/../../../templates/register/register3.php");
