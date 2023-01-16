@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/fil.css">
     <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/write.css">
     <title>Opinion.</title>
 </head>
 <body>
@@ -111,7 +112,7 @@
             </div>
         </div>
         <div class="container-right">
-            <div class="btn write-btn" onclick="openWritingPostModal">
+            <div class="btn write-btn" onclick="openWritingPostModal(false)">
                 Écrire
             </div>
             <div class="tri">
@@ -124,5 +125,7 @@
     </div>
 
     <script src="public/js/fil.js"></script>
+    <script src="public/js/writing.js"></script>
+    <script src="public/js/form-submitability.js"></script>
 </body>
 </html>
