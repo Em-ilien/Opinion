@@ -120,14 +120,20 @@
             </div>
         </main>
         <div class="container-right">
-            <div class="btn write-btn" onclick="openWritingPostModal(false)">
-                Écrire
-            </div>
-            <div class="tri">
-                <input type="radio" name="tri" id="commentated">
-                <label for="commentated">Les + commentés</label>
-                <input type="radio" name="tri" id="recent">
-                <label for="recent">Les + récents</label>
+            <div>
+                <div class="btn write-btn" onclick="openWritingPostModal(false)">
+                    Écrire
+                </div>
+                <div class="sort">
+                    <label>
+                        <input type="radio" name="sort" id="most-commented" checked>
+                        Les + commentés
+                    </label>
+                    <label>
+                        <input type="radio" name="sort" id="lastest">
+                        Les + récents
+                    </label>
+                </div>
             </div>
         </div>
     </div>

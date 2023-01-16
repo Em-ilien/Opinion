@@ -10,20 +10,13 @@ img{
 }
 
 main.fil{
-    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 5vh;
     height: 100%;
     padding: 2em;
     margin-top: 2em;
-}
-
-.container-right{
-    width: 31%;
-    height: 24vh;
-    position: sticky;
-    top: 0;
+    width: 60%;
 }
 
 .post{
@@ -118,39 +111,48 @@ main.fil{
     width: fit-content;
 }
 
-input[type=radio]{
-    display: none;
+.container-right{
+    width: calc(30% - 6em);
+    height: 24vh;
+    position: sticky;
+    top: 4em;
+    padding: 0 3em;
 }
 
-label{
-    position:relative;
-    color: #01cc65;
-    font-family: "Inter";
-    font-size: 30px;
-    border: 2px solid #01cc65;
-    border-radius: 5px;
-    padding: 10px 50px;
+.container-right > div {
+    width: fit-content;
+    margin: auto;
+}
+
+.container-right .write-btn {
+    margin-bottom: 2em;
+    margin: 0 0 2em;
+}
+
+.container-right .sort {
     display: flex;
-    align-items: center;
-    cursor: pointer;
+    flex-direction: column;
+    width: fit-content;
+    gap: 1em;
 }
 
-label::before{
-    height: 30px;
-    width: 30px;
-    border: 3px solid #01cc65;
-    border-radius: 50%;
-    margin-right: 20px;
-}
+.container-right .sort label {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 18px;
 
-input[type=radio]:checked + label{
-    background-color: #fff;
-    color: blue;
-}
-
-input[type=radio]:checked + label::before{
-    background-color: #3772FF;
-    height: 16px;
-    width: 16px;
-    border: 1px solid blue;
+    color: #393232;
+    
+    background: #E9E3DE;
+    box-shadow: 0px 0px 10px rgba(107, 98, 90, 0.5);
+    border-radius: 6px;
+    
+    width: 100%;
+    padding: 1em;
 }
