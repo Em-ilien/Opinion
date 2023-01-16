@@ -27,7 +27,7 @@
             </div>
             <div class="user-menu">
                 <!-- TODO: change default avatar to current user avatar, if exists -->
-                <span class="user-icon"><img id="user-img" src="public/img/default_avatar_user.png" alt="icône utilisateur"></span>
+                <span class="user-icon"><img id="user-img" src="public/img/avatars/user-0.png" alt="icône utilisateur"></span>
                 <span id="user-triangle-menu"></span>
             </div>
         </div>
@@ -37,7 +37,7 @@
             <div class="post">
                 <div class="profile">
                     <div class="profile-img">
-                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
+                        <img src="public/img//avatars/default_avatar_user.png" alt="icône utilisateur">
                     </div>
                     <div class="profile-name">
                         <h3>John Doe</h3>
@@ -61,7 +61,7 @@
             <div class="post">
                 <div class="profile">
                     <div class="profile-img">
-                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
+                        <img src="public/img//avatars/default_avatar_user.png" alt="icône utilisateur">
                     </div>
                     <div class="profile-name">
                         <h3>Emmanuel Patron</h3>
@@ -89,7 +89,7 @@
             <div class="post">
                 <div class="profile">
                     <div class="profile-img">
-                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
+                        <img src="public/img//avatars/default_avatar_user.png" alt="icône utilisateur">
                     </div>
                     <div class="profile-name">
                         <h3>Emmanuel Patron</h3>
@@ -115,10 +115,14 @@
                 Écrire
             </div>
             <div class="tri">
-                <input type="radio" name="tri" id="commentated">
-                <label for="commentated">Les + commentés</label>
-                <input type="radio" name="tri" id="recent">
-                <label for="recent">Les + récents</label>
+                <div class="tri-commentated">
+                    <input type="radio" name="tri" id="commentated">
+                    <label for="commentated">Les + commentés</label>
+                </div>
+                <div class="tri-recent">
+                    <input type="radio" name="tri" id="recent">
+                    <label for="recent">Les + récents</label>
+                </div>
             </div>
         </div>
     </div>

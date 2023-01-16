@@ -126,6 +126,7 @@ header .user-menu:hover #user-triangle-menu{
 header #user-img{
     max-width:100%;
     max-height:100%;
+    border-radius: 50%;
 }
 
 header #user-triangle-menu{
