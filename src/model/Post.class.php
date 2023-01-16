@@ -4,12 +4,16 @@ class Post {
     private $id;
     private $content;
     private $date;
+    private $postedOnUserPage;
+    private $postedOnFilPrincipal;
     private $author;
 
-    public function __construct($id, $content, $date, $author) {
+    public function __construct($id, $content, $date, $postedOnUserPage, $postedOnFilPrincipal, $author) {
         $this->id = $id;
         $this->content = $content;
         $this->date = $date;
+        $this->postedOnUserPage = $postedOnUserPage;
+        $this->postedOnFilPrincipal = $postedOnFilPrincipal;
         $this->author = $author;
     }
 
@@ -25,25 +29,17 @@ class Post {
         return $this->date;
     }
 
+    public function getPostedOnUserPage() {
+        return $this->postedOnUserPage;
+    }
+
+    public function getPostedOnFilPrincipal() {
+        return $this->postedOnFilPrincipal;
+    }
+
     public function getAuthor() {
         return $this->author;
     }
-
-    // public function setId($id) {
-    //     $this->id = $id;
-    // }
-
-    public function setContent($content) {
-        $this->content = $content;
-    }
-
-    // public function setDate($date) {
-    //     $this->date = $date;
-    // }
-
-    // public function setAuthor($author) {
-    //     $this->author = $author;
-    // }
 
     public function getComments() {
         return CommentDAO::getCommentsForPost($this);

@@ -111,7 +111,7 @@
             </div>
         </div>
         <div class="container-right">
-            <div class="btn">
+            <div class="btn write-btn" onclick="openWritingPostModal">
                 Écrire
             </div>
             <div class="tri">

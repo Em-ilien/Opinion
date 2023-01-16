@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="public/css/fil.css">
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/user.css">
+    <link rel="stylesheet" href="public/css/write.css">
 </head>
 
 <body>
@@ -60,7 +61,7 @@
                 <?php } ?>
             </div>
             <?php if ($askedUser->getId() == $user->getId()) { ?>
-                <div class="btn write-btn">
+                <div class="btn write-btn" onclick="openWritingPostModal(true)">
                     Écrire
                 </div>
             <?php } ?>
@@ -139,6 +140,8 @@
     </div>
 
     <script src="public/js/fil.js"></script>
+    <script src="public/js/writing.js"></script>
+    <script src="public/js/form-submitability.js"></script>
 </body>
 
 </html>

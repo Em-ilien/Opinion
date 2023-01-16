@@ -104,11 +104,12 @@ img{
     border-radius: 50px;
     justify-content: center;
     align-items: center;
-    height: 6vh;
-    width: 24vh;
     color: #E9E3DE;
     font-family: "Comfortaa";
     margin: auto;
+    cursor: pointer;
+    padding: 1em 4em;
+    width: fit-content;
 }
 
 input[type=radio]{
