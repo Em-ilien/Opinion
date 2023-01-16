@@ -43,7 +43,7 @@
         <aside class="user-profil">
             <div>
                 <div class="informations">
-                    <div class="identity">
+                    <div class="user-identity">
                         <img src="<?= $askedUser->getAvatarImagePath() ?>" alt="Avatar" class="avatar">
                         <span class="nickname">
                             <?= $askedUser->getNickname() ?>
@@ -67,74 +67,81 @@
             <?php } ?>
         </aside>
         <main class="fil">
-            <div class="post">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
+        <div class="post">
+                <aside class="user-identity" data-user-id="<?= $user->getId() ?>">
+                    <img src="<?= $user->getAvatarImagePath() ?>" alt="Avatar" class="avatar">
+                    <span class="nickname">
+                        <?= $user->getNickname() ?>
+                    </span>
+                    <span class="username">@<?= $user->getUsername() ?></span>
+                </aside>
+                <main>
+                    <div class="content">
+                        <p>Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!</p>
                     </div>
-                    <div class="profile-name">
-                        <h3>John Doe</h3>
-                    </div>
-                </div>
-                <div class="content" onmouseover="setCommentariesVisible(this)" onmouseout="setCommentariesHidden(this)">
-                    <div class="message">
-                        Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!
-                    </div>
-                    <div class="content-footer">
-                        <div class="see-commentaries hidden">
-                            <a href="#">Voir les commentaires</a>
+                    <div class="footer">
+                        <div class="see-comments-btn-ctn">
+                            <button class="btn see-comments-btn">Voir les commentaires</button>
                         </div>
-                        <div class="date">
-                            le 14 janvier 2021 à 14h00
-                        </div>
+                        <span class="date">
+                            le 14 janvier 2021
+                        </span>
                     </div>
-                </div>
+                </main>
             </div>
+
             <div class="post">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
+                <aside class="user-identity">
+                    <img src="<?= $user->getAvatarImagePath() ?>" alt="Avatar" class="avatar">
+                    <span class="nickname">
+                        <?= $user->getNickname() ?>
+                    </span>
+                    <span class="username">@<?= $user->getUsername() ?></span>
+                </aside>
+                <main>
+                    <div class="content">
+                        <p>Hier je lisais un rapport dans le Monde qui disait que l'immigration était le problème de
+                            toute conséquence du déclin du pays : inflation, racisme, islmamisation, dégradation de la
+                            culture et des traditions... Il faut peut-être penser à réparer le problème à la source.
+
+                            J'en parlais à ma famille et ils ne comprennent pas trop pourquoi l'immigration est un
+                            problème.
+
+                            En tout cas, moi, je saurais qui voter à la présidentielle en 2027. Et vous, que ferez-vous
+                            ?</p>
                     </div>
-                    <div class="profile-name">
-                        <h3>John Doe</h3>
-                    </div>
-                </div>
-                <div class="content" onmouseover="setCommentariesVisible(this)" onmouseout="setCommentariesHidden(this)">
-                    <div class="message">
-                        Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!
-                    </div>
-                    <div class="content-footer">
-                        <div class="see-commentaries hidden">
-                            <a href="#">Voir les commentaires</a>
+                    <div class="footer">
+                        <div class="see-comments-btn-ctn">
+                            <button class="btn see-comments-btn">Voir les commentaires</button>
                         </div>
-                        <div class="date">
-                            le 14 janvier 2021 à 14h00
-                        </div>
+                        <span class="date">
+                            le 14 janvier 2021
+                        </span>
                     </div>
-                </div>
+                </main>
             </div>
+
             <div class="post">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
+                <aside class="user-identity">
+                    <img src="<?= $user->getAvatarImagePath() ?>" alt="Avatar" class="avatar">
+                    <span class="nickname">
+                        EmmanuelPatron
+                    </span>
+                    <span class="username">@EmmanuelPatron</span>
+                </aside>
+                <main>
+                    <div class="content">
+                        <p>Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!</p>
                     </div>
-                    <div class="profile-name">
-                        <h3>John Doe</h3>
-                    </div>
-                </div>
-                <div class="content" onmouseover="setCommentariesVisible(this)" onmouseout="setCommentariesHidden(this)">
-                    <div class="message">
-                        Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!
-                    </div>
-                    <div class="content-footer">
-                        <div class="see-commentaries hidden">
-                            <a href="#">Voir les commentaires</a>
+                    <div class="footer">
+                        <div class="see-comments-btn-ctn">
+                            <button class="btn see-comments-btn">Voir les commentaires</button>
                         </div>
-                        <div class="date">
-                            le 14 janvier 2021 à 14h00
-                        </div>
+                        <span class="date">
+                            le 14 janvier 2021
+                        </span>
                     </div>
-                </div>
+                </main>
             </div>
         </main>
     </div>
