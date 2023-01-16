@@ -50,6 +50,28 @@ class UserDAO
         return new User($user['idUser'], $user['usernameUser'], $user['nicknameUser'], $user['emailUser'], $user['biographyUser'], $user['birthdayUser']);
     }
 
+    public static function getUsersMatchingQuery($query) {
+        $db = Database::getInstance();
+
+        if (strlen($query) <= 0)
+            return null;
+
+        $stmt = $db->prepare('SELECT * FROM user WHERE LOWER(usernameUser) LIKE LOWER(?) OR LOWER(nicknameUser) LIKE LOWER(?) LIMIT 7');
+        $stmt->execute(array("%$query%", "%$query%"));
+
+        $users = $stmt->fetchAll();
+
+        if (!$users)
+            return null;
+
+        $usersList = array();
+        foreach ($users as $user) {
+            $usersList[] = new User($user['idUser'], $user['usernameUser'], $user['nicknameUser'], $user['emailUser'], $user['biographyUser'], $user['birthdayUser']);
+        }
+
+        return $usersList;
+    }
+
     public static function getPassword($user)
     {
         $db = Database::getInstance();

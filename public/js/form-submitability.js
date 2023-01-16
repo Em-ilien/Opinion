@@ -1,6 +1,8 @@
-let submitBtn = document.querySelector(".validation-button");
+let submitBtn = document.querySelector(".validation-button") || document.querySelector('.btn[type="submit"]');
 
 function refreshSumbitBtnClickability() {
+	submitBtn = document.querySelector(".validation-button") || document.querySelector('.btn[type="submit"]');
+
 	if (!allRequiredCheckboxsAreChecked()) {
 		submitBtn.classList.add("disabled");
 		return;
@@ -42,6 +44,15 @@ function allRequiredTextInputsAreFilled() {
 
 	for (const textInput of textInputs) {
 		if (textInput.value.length >= textInput.getAttribute("length-submitability"))
+			continue;
+
+		return false;
+	}
+
+	let textareas = document.querySelectorAll("textarea[submitability='length']");
+
+	for (const textarea of textareas) {
+		if (textarea.value.length >= textarea.getAttribute("length-submitability"))
 			continue;
 
 		return false;
@@ -89,9 +100,10 @@ function allRequiredDateInputsAreFilled() {
 	return true;
 }
 
-submitBtn.addEventListener("click", (e) => {
-	if (!submitBtn.classList.contains("disabled"))
-		return;
+if (submitBtn)
+	submitBtn.addEventListener("click", (e) => {
+		if (!submitBtn.classList.contains("disabled"))
+			return;
 
-	e.preventDefault();
-});
+		e.preventDefault();
+	});

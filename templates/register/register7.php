@@ -22,7 +22,7 @@
 			<div>
 				<label>
 					Qui êtes-vous en quelques mots ?
-					<textarea name="biography" class="input2" rows="6" placeholder="Pâtissier depuis 8 ans, j’ai à coeur de défendre la tradition et le savoir faire français."></textarea>
+					<textarea name="biography" class="input2" rows="6" placeholder="Pâtissier depuis 8 ans, j'ai à coeur de défendre la tradition et le savoir faire français."></textarea>
 					<!-- <input type="text" name="desc" class="input2"><br> -->
 				</label>
 				<p class="text-info1">

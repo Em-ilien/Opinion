@@ -6,23 +6,19 @@ img{
 .container{
     display: flex;
     justify-content: space-between;
-    margin-top: 10vh;
-    margin-left: 7vh;
-    margin-right: 7vh;
+    height: calc(100vh - 12vh);
+    height: fit-content;
 }
 
-.fil{
+main.fil{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    height: calc(100vh - 12vh - 4em - 2em);
+    padding: 2em;
+    margin-top: 2em;
     width: 60%;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5vh;
-}
-
-.container-right{
-    display: flex;
-    flex-direction: column;
-    width: 31%;
-    height: 24vh;
+    overflow-y: visible;
 }
 
 .post{
@@ -31,32 +27,47 @@ img{
     border-radius: 10px;
 }
 
-.profile{
+.user-identity{
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2em 2em 2em 3em;
+    font-size: 0.8em;
+    align-self: flex-start;
+    font-family: 'Inter';
 }
 
 .content{
     width: 100%;
 }
 
-.content-footer{
+.post main {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2em;
+    padding: 1.1em 2em 0.5em;
+}
+
+.post main .footer {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-right: 3vw;
-    margin-left: 3vw;
+    padding: 0 0 0 2em;
+    height: 2em;
 }
 
 .date{
+    align-self: end;
     font-family: "Inter";
     font-weight: 500;
     font-size: 10px;
     color: #4D4D4D;
+    margin-bottom: 1em;
 }
 
-.see-commentaries a{
+.see-comments-btn-ctn .see-comments-btn{
     text-decoration: none;
     color: #3772FF;
     font-family: "Inter";
@@ -64,42 +75,27 @@ img{
     font-size: 14px;
     font-style: normal;
     text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    width: fit-content;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
+    display: none;
+    margin-bottom: 1em;
 }
 
-.message{
-    padding-top: 1vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    height: 65%;
-    margin-top: 5vh;
+.post:hover .see-comments-btn-ctn .see-comments-btn {
+    display: block;
+}
+
+.content{
+    height: 100%;
     font-family: "Inter";
     color: #393232;
     font-weight: 500;
     font-size: 13px;
-}
-
-.profile-img{
-    display: block;
-    margin: 0 auto;
-    height: 30%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
-}
-
-.profile-name{
-    margin: 0 auto;
-    margin-top: 1vh;
-    font-weight: 500;
-    font-family: "Inter";
-    font-size: 14px;
-}
-
-.hidden{
-    visibility: hidden;
-}
-
-.visible{
-    visibility: visible;
 }
 
 .btn{
@@ -109,27 +105,56 @@ img{
     border-radius: 50px;
     justify-content: center;
     align-items: center;
-    height: 6vh;
-    width: 24vh;
     color: #E9E3DE;
     font-family: "Comfortaa";
     margin: auto;
-}
-
-.btn:hover{
     cursor: pointer;
+    padding: 1em 4em;
+    width: fit-content;
 }
 
-.tri{
+.container-right{
+    width: calc(30% - 6em);
+    height: 24vh;
+    position: sticky;
+    top: 4em;
+    padding: 0 3em;
+}
+
+.container-right > div {
+    width: fit-content;
+    margin: auto;
+}
+
+.container-right .write-btn {
+    margin-bottom: 2em;
+    margin: 0 0 2em;
+}
+
+.container-right .sort {
     display: flex;
     flex-direction: column;
-    gap: 1.5vh;
+    width: fit-content;
+    gap: 1em;
 }
 
-.tri div{
-    width: 19vw;
-    height: 5vh;
-    background-color: #E9E3DE;
-    border-radius: 6px;
+.container-right .sort label {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 18px;
+
+    color: #393232;
+    
+    background: #E9E3DE;
     box-shadow: 0px 0px 10px rgba(107, 98, 90, 0.5);
+    border-radius: 6px;
+    
+    width: 100%;
+    padding: 1em;
 }
