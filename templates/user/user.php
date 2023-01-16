@@ -10,39 +10,16 @@
     <link rel="stylesheet" href="public/css/fil.css">
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/user.css">
+    <link rel="stylesheet" href="public/css/write.css">
 </head>
 
 <body>
-    <header id="header">
-        <div class="logo-header">
-            <a href=".">
-                <h1 class="logo">Opinion<span class="dot">.</span></h1>
-            </a>
-        </div>
-        <div class="menu-header">
-            <ul>
-                <li><a href=".">Accueil</a></li>
-                <li><a href=".">Fil d'actualité</a></li>
-                <li><a href="?page=user">Profil</a></li>
-                <li><a href="?page=logout">Déconnexion</a></li>
-                <!-- TODO: supprimer le lien et ouvrir une popup avec du JS -->
-            </ul>
-            <div class="search-bar-header">
-                <input type="text" name="search" placeholder="Rechercher">
-            </div>
-            <div class="user-menu">
-                <!-- TODO: change default avatar to current user avatar, if exists -->
-                <span class="user-icon"><img id="user-img" src="public/img/default_avatar_user.png" alt="icône utilisateur"></span>
-                <span id="user-triangle-menu"></span>
-            </div>
-        </div>
-    </header>
-
+    <?php include(__DIR__ . '/../header.php'); ?>
     <div class="container">
-        <aside class="user-profil">
+        <aside class="user-profil" data-user-id="<?= $askedUser->getId() ?>">
             <div>
                 <div class="informations">
-                    <div class="identity">
+                    <div class="user-identity">
                         <img src="<?= $askedUser->getAvatarImagePath() ?>" alt="Avatar" class="avatar">
                         <span class="nickname">
                             <?= $askedUser->getNickname() ?>
@@ -50,7 +27,9 @@
                         <span class="username">@<?= $askedUser->getUsername() ?></span>
                     </div>
                     <div class="biography">
-                        <p><?= $askedUser->getBiography() ?></p>
+                        <p>
+                            <?= $askedUser->getBiography() ?>
+                        </p>
                     </div>
                 </div>
                 <?php if ($askedUser->getId() == $user->getId()) { ?>
@@ -60,85 +39,17 @@
                 <?php } ?>
             </div>
             <?php if ($askedUser->getId() == $user->getId()) { ?>
-                <div class="btn write-btn">
+                <div class="btn write-btn" onclick="openWritingPostModal(true)">
                     Écrire
                 </div>
             <?php } ?>
         </aside>
-        <main class="fil">
-            <div class="post">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
-                    </div>
-                    <div class="profile-name">
-                        <h3>John Doe</h3>
-                    </div>
-                </div>
-                <div class="content" onmouseover="setCommentariesVisible(this)" onmouseout="setCommentariesHidden(this)">
-                    <div class="message">
-                        Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!
-                    </div>
-                    <div class="content-footer">
-                        <div class="see-commentaries hidden">
-                            <a href="#">Voir les commentaires</a>
-                        </div>
-                        <div class="date">
-                            le 14 janvier 2021 à 14h00
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="post">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
-                    </div>
-                    <div class="profile-name">
-                        <h3>John Doe</h3>
-                    </div>
-                </div>
-                <div class="content" onmouseover="setCommentariesVisible(this)" onmouseout="setCommentariesHidden(this)">
-                    <div class="message">
-                        Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!
-                    </div>
-                    <div class="content-footer">
-                        <div class="see-commentaries hidden">
-                            <a href="#">Voir les commentaires</a>
-                        </div>
-                        <div class="date">
-                            le 14 janvier 2021 à 14h00
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="post">
-                <div class="profile">
-                    <div class="profile-img">
-                        <img src="public/img/default_avatar_user.png" alt="icône utilisateur">
-                    </div>
-                    <div class="profile-name">
-                        <h3>John Doe</h3>
-                    </div>
-                </div>
-                <div class="content" onmouseover="setCommentariesVisible(this)" onmouseout="setCommentariesHidden(this)">
-                    <div class="message">
-                        Bonjour à tous, je suis nouveau ici. Comment est ma PP ?!
-                    </div>
-                    <div class="content-footer">
-                        <div class="see-commentaries hidden">
-                            <a href="#">Voir les commentaires</a>
-                        </div>
-                        <div class="date">
-                            le 14 janvier 2021 à 14h00
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+        <main class="fil scrollable"></main>
     </div>
 
-    <script src="public/js/fil.js"></script>
+    <script src="public/js/showing-post.js"></script>
+    <script src="public/js/writing.js"></script>
+    <script src="public/js/form-submitability.js"></script>
 </body>
 
 </html>

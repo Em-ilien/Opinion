@@ -1,5 +1,7 @@
 <?php
 
+require_once(__DIR__ . '/../daos/PostDAO.php');
+
 class User {
     private $id;
     private $username;
@@ -23,6 +25,10 @@ class User {
 
     public function isAuthorOfComment($comment) {
         return $comment->getAuthor()->getId == $this->id;
+    }
+
+    public function writePost($postContent, $postedOnUserPage = false, $postedOnFilPrincipal = false) {
+        (new PostDAO)->createPost($this, $postContent, $postedOnUserPage, $postedOnFilPrincipal);
     }
 
     public function getId() {

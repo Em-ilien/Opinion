@@ -20,7 +20,7 @@
 		<p class="text-info3">
 			Vous pouvez dès à présent publier un post !
 		</p>
-		<input type="submit" class="validation-button" name="button-next" value="Ecrire">
+		<input type="submit" class="validation-button" name="button-next" value="Écrire">
 	</form>
 </body>
 
