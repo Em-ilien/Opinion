@@ -18,7 +18,7 @@ loginForm.addEventListener("submit", (e) => {
     xhr.open("POST", "src/ajax/check_login_credentials.php", true);
     xhr.onload = () => {
         if (xhr.response.status == "success") {
-            window.location.href = ".";
+            window.location.href = "index.php";
         } else {
             let error = document.createElement("p");
             error.classList.add("login-error");

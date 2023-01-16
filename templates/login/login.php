@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-        <h1 onclick="document.location.href = '.'" class="title">Opinion<span class="dot">.</span></h1>
+        <h1 onclick="document.location.href = 'index.php'" class="title">Opinion<span class="dot">.</span></h1>
     </header>
     <div class="form-ctn">
         <form method="post" action="index.php" class="login-form">
