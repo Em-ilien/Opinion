@@ -14,31 +14,7 @@
 </head>
 
 <body>
-    <header id="header">
-        <div class="logo-header">
-            <a href=".">
-                <h1 class="logo">Opinion<span class="dot">.</span></h1>
-            </a>
-        </div>
-        <div class="menu-header">
-            <ul>
-                <li><a href=".">Accueil</a></li>
-                <li><a href=".">Fil d'actualité</a></li>
-                <li><a href="?page=user">Profil</a></li>
-                <li><a href="?page=logout">Déconnexion</a></li>
-                <!-- TODO: supprimer le lien et ouvrir une popup avec du JS -->
-            </ul>
-            <div class="search-bar-header">
-                <input type="text" name="search" placeholder="Rechercher">
-            </div>
-            <div class="user-menu">
-                <!-- TODO: change default avatar to current user avatar, if exists -->
-                <span class="user-icon"><img id="user-img" src="public/img/default_avatar_user.png" alt="icône utilisateur"></span>
-                <span id="user-triangle-menu"></span>
-            </div>
-        </div>
-    </header>
-
+    <?php include(__DIR__ . '/../header.php'); ?>
     <div class="container">
         <aside class="user-profil" data-user-id="<?= $user->getId() ?>">
             <div>
@@ -51,7 +27,9 @@
                         <span class="username">@<?= $askedUser->getUsername() ?></span>
                     </div>
                     <div class="biography">
-                        <p><?= $askedUser->getBiography() ?></p>
+                        <p>
+                            <?= $askedUser->getBiography() ?>
+                        </p>
                     </div>
                 </div>
                 <?php if ($askedUser->getId() == $user->getId()) { ?>
